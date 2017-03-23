@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD588FF41E82EAE800575B32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF31E82EAE800575B32 /* Constants.swift */; };
+		BD588FF61E82F77D00575B32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
+		BD588FF81E83773000575B32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF71E83773000575B32 /* User.swift */; };
+		BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C36531E82E1AF00A8235C /* Networking.swift */; };
+		BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */; };
+		BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC1371E8047A000BA43D9 /* LoginController.swift */; };
+		BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC1391E8047A000BA43D9 /* Main.storyboard */; };
+		BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */; };
+		BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */; };
+		BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */; };
+		CE60A30B664070B2E3AA3502 /* Pods_whale_ios_nabil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.debug.xcconfig"; sourceTree = "<group>"; };
+		7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.release.xcconfig"; sourceTree = "<group>"; };
+		BD588FF31E82EAE800575B32 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD588FF51E82F77D00575B32 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BD588FF71E83773000575B32 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD8C36531E82E1AF00A8235C /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		BDDFC1321E8047A000BA43D9 /* whale_ios_nabil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whale_ios_nabil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDDFC1371E8047A000BA43D9 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BDDFC13A1E8047A000BA43D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDDFC13F1E8047A000BA43D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDDFC1411E8047A000BA43D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
+		DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDDFC12F1E8047A000BA43D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE60A30B664070B2E3AA3502 /* Pods_whale_ios_nabil.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132F1F179FE43DB6AE067F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDDFC1291E8047A000BA43D9 = {
+			isa = PBXGroup;
+			children = (
+				BDDFC1341E8047A000BA43D9 /* whale_ios_nabil */,
+				BDDFC1331E8047A000BA43D9 /* Products */,
+				E851056D1A06AE91D1FAA476 /* Pods */,
+				132F1F179FE43DB6AE067F6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDDFC1331E8047A000BA43D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFC1321E8047A000BA43D9 /* whale_ios_nabil.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDFC1341E8047A000BA43D9 /* whale_ios_nabil */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */,
+				BDDFC1471E804EB400BA43D9 /* Extensions */,
+				BDDFC1371E8047A000BA43D9 /* LoginController.swift */,
+				BDDFC1481E804EDA00BA43D9 /* UI */,
+				BDDFC14C1E80504F00BA43D9 /* Networking */,
+				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
+				BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */,
+				BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */,
+				BDDFC1411E8047A000BA43D9 /* Info.plist */,
+			);
+			path = whale_ios_nabil;
+			sourceTree = "<group>";
+		};
+		BDDFC1471E804EB400BA43D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BDDFC1481E804EDA00BA43D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFC1491E804EE700BA43D9 /* Cell */,
+				BDDFC14A1E804EF500BA43D9 /* Storyboards */,
+				BDDFC14B1E804F0E00BA43D9 /* Scenes */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BDDFC1491E804EE700BA43D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		BDDFC14A1E804EF500BA43D9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BDDFC14B1E804F0E00BA43D9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		BDDFC14C1E80504F00BA43D9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */,
+				BD588FF71E83773000575B32 /* User.swift */,
+				BD8C36531E82E1AF00A8235C /* Networking.swift */,
+				BD588FF51E82F77D00575B32 /* Service.swift */,
+				BD588FF31E82EAE800575B32 /* Constants.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E851056D1A06AE91D1FAA476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */,
+				7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDDFC1311E8047A000BA43D9 /* whale_ios_nabil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDFC1441E8047A000BA43D9 /* Build configuration list for PBXNativeTarget "whale_ios_nabil" */;
+			buildPhases = (
+				8C91B5C2EDEAA7207DEA7497 /* [CP] Check Pods Manifest.lock */,
+				BDDFC12E1E8047A000BA43D9 /* Sources */,
+				BDDFC12F1E8047A000BA43D9 /* Frameworks */,
+				BDDFC1301E8047A000BA43D9 /* Resources */,
+				C7B22A021887FB5712901A9E /* [CP] Embed Pods Frameworks */,
+				32125A97FCF7DB265951B32A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whale_ios_nabil;
+			productName = whale_ios_nabil;
+			productReference = BDDFC1321E8047A000BA43D9 /* whale_ios_nabil.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDDFC12A1E8047A000BA43D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MakeSchool;
+				TargetAttributes = {
+					BDDFC1311E8047A000BA43D9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PU7KSX8Z6J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BDDFC12D1E8047A000BA43D9 /* Build configuration list for PBXProject "whale_ios_nabil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDDFC1291E8047A000BA43D9;
+			productRefGroup = BDDFC1331E8047A000BA43D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDDFC1311E8047A000BA43D9 /* whale_ios_nabil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDDFC1301E8047A000BA43D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */,
+				BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */,
+				BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32125A97FCF7DB265951B32A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C91B5C2EDEAA7207DEA7497 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B22A021887FB5712901A9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDDFC12E1E8047A000BA43D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD588FF41E82EAE800575B32 /* Constants.swift in Sources */,
+				BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */,
+				BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */,
+				BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */,
+				BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */,
+				BD588FF61E82F77D00575B32 /* Service.swift in Sources */,
+				BD588FF81E83773000575B32 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDDFC1391E8047A000BA43D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDFC13A1E8047A000BA43D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDFC13F1E8047A000BA43D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDDFC1421E8047A000BA43D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDDFC1431E8047A000BA43D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDDFC1451E8047A000BA43D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
+				INFOPLIST_FILE = whale_ios_nabil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Makeschool.whale-ios-nabil";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDDFC1461E8047A000BA43D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
+				INFOPLIST_FILE = whale_ios_nabil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Makeschool.whale-ios-nabil";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDDFC12D1E8047A000BA43D9 /* Build configuration list for PBXProject "whale_ios_nabil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFC1421E8047A000BA43D9 /* Debug */,
+				BDDFC1431E8047A000BA43D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDFC1441E8047A000BA43D9 /* Build configuration list for PBXNativeTarget "whale_ios_nabil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDFC1451E8047A000BA43D9 /* Debug */,
+				BDDFC1461E8047A000BA43D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDDFC12A1E8047A000BA43D9 /* Project object */;
+}
