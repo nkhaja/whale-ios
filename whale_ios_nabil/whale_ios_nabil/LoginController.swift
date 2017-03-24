@@ -21,6 +21,29 @@ class LoginController: UIViewController {
     
     
     
+    
+    
+    func loginUser(email:String, password: String){
+        
+        WhaleService.loginUser(email: email, password: password) { user, error in
+            
+            if error != nil {
+                return
+            }
+            
+            guard let user = user else{
+                return
+            }
+            
+            // assign user here and do transition
+            
+            
+        }
+        
+    }
+    
+    
+    
 
 
 

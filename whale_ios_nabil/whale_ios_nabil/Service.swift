@@ -8,32 +8,26 @@
 
 import Foundation
 import Alamofire
-
+import SwiftyJSON
 
 struct WhaleService {
     
-    static func loginUser(email: String, password: String){
+    static func loginUser(email: String, password: String, completion: @escaping (User?, Error?) -> Void){
         
         Alamofire.request(WhaleRouter.loginUser(email: email, password: password)).responseJSON(completionHandler: { response in
             
             switch(response.result){
-            case .success(value):
-                // parseUserHere
-                
-                
+            case let .success(value):
+                let user = User(json: JSON(value: value))
+                completion(user, nil)
+            
+            case let .failure(error):
+                completion(nil, error)
+        
             }
-        
-        
-        
-        
         })
         
     }
-    
-    
-    static func parseUser(json: JSON) -> User
-    
-
-    
-    
 }
+    
+    

@@ -28,7 +28,7 @@ struct UserConstants{
     static let imageUrl = "image_url"
     static let id = "id"
     static let followingCount = "following_count"
-    static let followerCount = "follower_count"
+    static let followeeCount = "followee_count"
     static let firstName = "first_name"
     static let email = "email"
     
