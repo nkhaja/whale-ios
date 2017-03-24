@@ -11,7 +11,7 @@ target 'whale_ios_nabil' do
   # Pods for whale_ios_nabil
 
 	pod 'Alamofire'
-	pod 'Gloss', '~> 1.2'
+	pod 'Gloss'
 	pod 'Kingfisher', '~> 3.0'
 	pod 'SwiftyJSON'
 	pod 'KeychainAccess'

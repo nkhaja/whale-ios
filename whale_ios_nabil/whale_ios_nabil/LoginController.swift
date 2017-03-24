@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 class LoginController: UIViewController {
 
@@ -21,11 +22,9 @@ class LoginController: UIViewController {
     
     
     
-    
-    
     func loginUser(email:String, password: String){
         
-        WhaleService.loginUser(email: email, password: password) { user, error in
+        WhaleService.loginUser(email: email, password: password) { [weak self] user, token, error  in
             
             if error != nil {
                 return
@@ -35,12 +34,36 @@ class LoginController: UIViewController {
                 return
             }
             
-            // assign user here and do transition
-            
+            if let token = token{
+                
+                KeyManager.instance.assignToken(token: token)
+                
+            }
             
         }
         
     }
+    
+    
+    @IBAction func loginButton(_ sender: Any) {
+        
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        
+        if email == "" || password == "" {
+            
+            
+            // TODO: Put error message for user here
+            
+            return
+            
+        }
+        
+        loginUser(email: email, password: password)
+        
+    }
+    
     
     
     

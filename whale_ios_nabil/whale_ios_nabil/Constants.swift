@@ -31,5 +31,5 @@ struct UserConstants{
     static let followeeCount = "followee_count"
     static let firstName = "first_name"
     static let email = "email"
-    
+    static let authentication = "authentication"    
 }

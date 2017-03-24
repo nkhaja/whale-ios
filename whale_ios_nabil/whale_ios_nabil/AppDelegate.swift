@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var initialController: UIViewController
+        
+        if KeyManager.instance.hasToken(){
+            
+            initialController = storyboard.instantiateViewController(withIdentifier: "homeScreen") // as homeController
+            }
+        
+        else {
+            
+            // take user to login screen
+            initialController = storyboard.instantiateViewController(withIdentifier: "login")
+        }
+
         return true
     }
 

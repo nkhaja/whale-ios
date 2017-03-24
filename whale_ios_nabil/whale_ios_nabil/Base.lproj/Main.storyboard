@@ -41,6 +41,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Jeq-pR-YIx"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03s-oW-uVk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,6 +58,10 @@
                             <constraint firstItem="Dyc-L5-tqS" firstAttribute="top" secondItem="bno-7L-tR6" secondAttribute="bottom" constant="71" id="lZ4-Yr-oqq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="bno-7L-tR6" id="6kB-1u-FeM"/>
+                        <outlet property="passwordTextField" destination="Dyc-L5-tqS" id="ffr-hU-rB3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

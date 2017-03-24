@@ -17,6 +17,8 @@
 		BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */; };
 		BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */; };
 		BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */; };
+		BDF1011F1E858ACC00499EF4 /* gloss_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF1011E1E858ACC00499EF4 /* gloss_test.swift */; };
+		BDF101211E8594F000499EF4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF101201E8594F000499EF4 /* Keys.swift */; };
 		CE60A30B664070B2E3AA3502 /* Pods_whale_ios_nabil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		BDDFC13F1E8047A000BA43D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDDFC1411E8047A000BA43D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
+		BDF1011E1E858ACC00499EF4 /* gloss_test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gloss_test.swift; sourceTree = "<group>"; };
+		BDF101201E8594F000499EF4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,8 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */,
-				BDDFC1471E804EB400BA43D9 /* Extensions */,
+				BDF101201E8594F000499EF4 /* Keys.swift */,
 				BDDFC1371E8047A000BA43D9 /* LoginController.swift */,
+				BDDFC1471E804EB400BA43D9 /* Extensions */,
 				BDDFC1481E804EDA00BA43D9 /* UI */,
 				BDDFC14C1E80504F00BA43D9 /* Networking */,
 				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
@@ -136,6 +141,7 @@
 				BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */,
 				BD588FF71E83773000575B32 /* User.swift */,
 				BD8C36531E82E1AF00A8235C /* Networking.swift */,
+				BDF1011E1E858ACC00499EF4 /* gloss_test.swift */,
 				BD588FF51E82F77D00575B32 /* Service.swift */,
 				BD588FF31E82EAE800575B32 /* Constants.swift */,
 			);
@@ -277,10 +283,12 @@
 			files = (
 				BD588FF41E82EAE800575B32 /* Constants.swift in Sources */,
 				BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */,
+				BDF1011F1E858ACC00499EF4 /* gloss_test.swift in Sources */,
 				BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */,
 				BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */,
 				BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */,
 				BD588FF61E82F77D00575B32 /* Service.swift in Sources */,
+				BDF101211E8594F000499EF4 /* Keys.swift in Sources */,
 				BD588FF81E83773000575B32 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
