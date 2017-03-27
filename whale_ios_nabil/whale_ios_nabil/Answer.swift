@@ -13,7 +13,7 @@ import UIKit
 // sample auth: user: gordonelliel, pass: example
 
 
-struct answerModel {
+struct Answer {
     
     var video: URL
     var thumbnail: UIImage

@@ -1,5 +1,5 @@
 //
-//  gloss_test.swift
+//  Question.swift
 //  whale_ios_nabil
 //
 //  Created by Nabil K on 2017-03-24.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-import Gloss
-
-
