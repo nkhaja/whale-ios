@@ -45,6 +45,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>05114D4DE3EDAC9591FBDF7C4EE9A544</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>05424B660C7D75AF2BC71F4F2CF2633E</key>
 		<dict>
 			<key>containerPortal</key>
@@ -57,6 +70,19 @@
 			<string>C1B8CA229C9AF3CEBF0EB217B203B49C</string>
 			<key>remoteInfo</key>
 			<string>Gloss</string>
+		</dict>
+		<key>061E3633CB70F31ED4CB3F02AB128E55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0A435A19A10C50E3D835F6F7F5E6D0CC</key>
 		<dict>
@@ -129,6 +155,30 @@
 			<string>C0EC788400CB52E4E1199271D52B9199</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D4C360D61C5C543D2DC31D66DBBF6FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>470EB52ED14831B1D3D3E92917C1D6E4</string>
+				<string>49C68F87358C1D9F98CE6DF9865EC2F5</string>
+				<string>05114D4DE3EDAC9591FBDF7C4EE9A544</string>
+				<string>79E69ABE4B903511A83BD8943D24B0C8</string>
+				<string>061E3633CB70F31ED4CB3F02AB128E55</string>
+				<string>C04AA234EF96EBC7B979F6D6D08CC48B</string>
+				<string>9A4F52EE2CB852259BC07AD7D9DD6022</string>
+				<string>1023540DDDEA9536052B0020E865A20C</string>
+				<string>E558082125F0AC09B5BE4B5F3E3E42BA</string>
+				<string>74A0DFE43B65B035E3736A40A98D4B5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-whale_ios_nabil</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-whale_ios_nabil</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0DA171F48B7D1696DD33B6356E1E1835</key>
 		<dict>
@@ -208,6 +258,19 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
+		</dict>
+		<key>1023540DDDEA9536052B0020E865A20C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>106CA55D90CE6F640EB8B9706CFE23FF</key>
 		<dict>
@@ -315,12 +378,115 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>133C6CDEB0386562C557A886F04D2CC8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DB301117B5223377CA991E2C82E30F45</string>
+			<key>buildPhases</key>
+			<array>
+				<string>799C260B10C98C46C5E0C2190B5B0E99</string>
+				<string>99288651A1D7E62E92BCEEFBEE5F9A9D</string>
+				<string>8F91F53812CF4BB43E9BA0785019A269</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>1861F260A9BD5E82E09E548BC3349618</string>
+				<string>AD0C280DCD6793B1026CA8EB5D530CB0</string>
+				<string>80048C5504E556CD1C7484A46CDAA810</string>
+				<string>5870DC9689BD1210FDF93F3A19D987A2</string>
+				<string>75E5139DE8C1B65A8CEE1F7ABA207EC7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-whale_ios_nabilTests</string>
+			<key>productName</key>
+			<string>Pods-whale_ios_nabilTests</string>
+			<key>productReference</key>
+			<string>3E3E4C43B26C23D63D376676F0CA9B98</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
 		<key>1381B8F96B5AAA41A438C8EF1BECD265</key>
 		<dict>
 			<key>fileRef</key>
 			<string>A5C38FB8022BE70F3FA2C90F520B817C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B79DFDD1E103631C30523BBD882393</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C6285352531877CDC518711B497C3721</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-whale_ios_nabilTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_whale_ios_nabilTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>15A8BC7C555FC23FDF01782AABAC51B0</key>
 		<dict>
@@ -336,6 +502,17 @@
 			<string>Sources/CacheSerializer.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1861F260A9BD5E82E09E548BC3349618</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>target</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>targetProxy</key>
+			<string>5B2BE6B32BFC83E57B90B2580A9818AB</string>
 		</dict>
 		<key>18B291B41E8BD857A7894A5937B0F0A6</key>
 		<dict>
@@ -371,6 +548,32 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>1A6B2B85D96BA9A5EE01D04F717C12BC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1DE93A359FA21F91DFBE81309E851A4A</string>
+			<key>remoteInfo</key>
+			<string>Kingfisher</string>
+		</dict>
+		<key>1ADAC9B641F8A4D3A22CB63C90E2126E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1C20A0C2C70049789164E046F2A75C9E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -405,7 +608,7 @@
 			<key>productName</key>
 			<string>SwiftyJSON</string>
 			<key>productReference</key>
-			<string>D1C35A4242E0377E2ABE59200279031D</string>
+			<string>FFAE05D36FF7C52CAEC8A9D916F5CCA4</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -512,7 +715,7 @@
 			<key>productName</key>
 			<string>Kingfisher</string>
 			<key>productReference</key>
-			<string>F26008ADDC58AF3CDE307D5B0C5FB80E</string>
+			<string>B4FD7F333D613F3A3B33C01AD07D1686</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -522,6 +725,21 @@
 			<string>79509D3F83D65F49234EF5865C4C22E6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>1ED12FADF3E8F2E683B0445A00D7D47B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>KeychainAccess.framework</string>
+			<key>path</key>
+			<string>KeychainAccess.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>20E15B11AAA2A4496B5DF99CC1E82F4F</key>
 		<dict>
@@ -571,7 +789,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2CA5CB0C1B99524D975D61128D8860CB</key>
+		<key>2CA3E3D0F6DF65FB5D13524792981F94</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -580,9 +798,9 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Alamofire.framework</string>
+			<string>Pods_whale_ios_nabil.framework</string>
 			<key>path</key>
-			<string>Alamofire.framework</string>
+			<string>Pods-whale_ios_nabil.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
@@ -676,6 +894,19 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E776D638765CAD4D438E8563F8BBDFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2E97BE41D443D7641693B53D2AF2244E</key>
 		<dict>
@@ -774,6 +1005,30 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>3605526073E6336A27C58EA5981FFFA3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA5FE325C9666391EDE3F8ADB5607594</string>
+				<string>F532FF973850A5F19340BA597464ADB9</string>
+				<string>2E776D638765CAD4D438E8563F8BBDFF</string>
+				<string>7B776E464C22BD5E7EBD1DD61A9CAEB9</string>
+				<string>D239E279B437E8CE73C9AA8214DB4B92</string>
+				<string>A5D136B42E3BC5357CFB55123E240C30</string>
+				<string>D96782006E4CAE56C0473E49BAAAEA0A</string>
+				<string>1ADAC9B641F8A4D3A22CB63C90E2126E</string>
+				<string>C6285352531877CDC518711B497C3721</string>
+				<string>D34F43B0A098E3F52B9FAAD96583A8C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-whale_ios_nabilTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-whale_ios_nabilTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>363F048EAA6933FA24F8FFB2537AE0B0</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -806,7 +1061,7 @@
 		<key>378D5D13F989CCB27ABB1C0AC2E555DC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>727B776B4AEE8934C734E78ED3DFAE18</string>
+			<string>061E3633CB70F31ED4CB3F02AB128E55</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1022,6 +1277,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3E3E4C43B26C23D63D376676F0CA9B98</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_whale_ios_nabilTests.framework</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>3F6462A3E964E2438BBE447942AD19F4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1079,21 +1349,6 @@
 			<string>Sources/ExtensionDecodable.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42F200C1F9BBF176E9FC68A006D31899</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_whale_ios_nabil.framework</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>433CD3331B6C3787F473C941B61FC68F</key>
 		<dict>
@@ -1173,12 +1428,58 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>470EB52ED14831B1D3D3E92917C1D6E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>473A9085410554074ED17F48C4BB8308</key>
 		<dict>
 			<key>fileRef</key>
 			<string>232CC40B6BDED99579A8A76AF55C1F9B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>49C68F87358C1D9F98CE6DF9865EC2F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A9C225E21EAB58C9E49CE7BEB3A2086</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D239E279B437E8CE73C9AA8214DB4B92</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C700AFF184B4F89480D62ADED010DA4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Alamofire.framework</string>
+			<key>path</key>
+			<string>Alamofire.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>51671044E5D1D7299CB7CB16EB0FC9B3</key>
 		<dict>
@@ -1230,6 +1531,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>54D51EC23EEE285F4811397EDA0C41DC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D4C360D61C5C543D2DC31D66DBBF6FC</string>
+				<string>3605526073E6336A27C58EA5981FFFA3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>55F9FBC65B032F0CBEB48157A3BFD594</key>
 		<dict>
 			<key>fileRef</key>
@@ -1244,18 +1559,29 @@
 				</array>
 			</dict>
 		</dict>
-		<key>5C8146E5D1ABD3F2074A29FDDCB28B91</key>
+		<key>5870DC9689BD1210FDF93F3A19D987A2</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Kingfisher</string>
+			<key>target</key>
+			<string>1DE93A359FA21F91DFBE81309E851A4A</string>
+			<key>targetProxy</key>
+			<string>1A6B2B85D96BA9A5EE01D04F717C12BC</string>
+		</dict>
+		<key>5B2BE6B32BFC83E57B90B2580A9818AB</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>remoteInfo</key>
+			<string>Alamofire</string>
 		</dict>
 		<key>5CEE617A8760442E28E07AD5CF099A7D</key>
 		<dict>
@@ -1297,7 +1623,7 @@
 			<key>productName</key>
 			<string>Pods-whale_ios_nabil</string>
 			<key>productReference</key>
-			<string>42F200C1F9BBF176E9FC68A006D31899</string>
+			<string>2CA3E3D0F6DF65FB5D13524792981F94</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -1327,30 +1653,6 @@
 			<string>392E51901034541356B2C760CF5BE044</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>64297BB55EF0A1395889AC96437E86C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D106D63A358592B63D461F9DB275ECB7</string>
-				<string>B3B6CC9B37060F63F848A60912E4DD1D</string>
-				<string>5C8146E5D1ABD3F2074A29FDDCB28B91</string>
-				<string>8652B30BABE945A09B5029F73C7077AC</string>
-				<string>727B776B4AEE8934C734E78ED3DFAE18</string>
-				<string>713AF023B2080328DCF4BB30FC6A8B02</string>
-				<string>BFC933583B5BD8823731A5C661EF70A4</string>
-				<string>C332815EEE1F855CE24A34FAC0C886CB</string>
-				<string>B82FDFBD68FA94B4A36AEFDDD239507C</string>
-				<string>ECF6498E225BFB237679A9B62B546FE7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-whale_ios_nabil</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-whale_ios_nabil</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6464A760FC2D86BCBE5DAA8395854098</key>
 		<dict>
@@ -1387,6 +1689,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>693941689CD1900B3DB660DAD058B1E6</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1C5BAF91C33E0D9A8AAA29D17DE47807</string>
+			<key>remoteInfo</key>
+			<string>SwiftyJSON</string>
+		</dict>
 		<key>6AB3D25AC1A55D6429CA36DC9FCA98CE</key>
 		<dict>
 			<key>containerPortal</key>
@@ -1418,7 +1733,7 @@
 		<key>6D8D3D515D9378ECDDF98955213AC617</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>ECF6498E225BFB237679A9B62B546FE7</string>
+			<string>74A0DFE43B65B035E3736A40A98D4B5F</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1531,19 +1846,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>713AF023B2080328DCF4BB30FC6A8B02</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>71A7FBB5C28B6035F9DB3F553F32513D</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1559,19 +1861,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>727B776B4AEE8934C734E78ED3DFAE18</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>73FEF7851BAFF73B43B2E71B7E475120</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1582,6 +1871,19 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Alamofire-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74A0DFE43B65B035E3736A40A98D4B5F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1604,6 +1906,17 @@
 			<string>Alamofire-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75E5139DE8C1B65A8CEE1F7ABA207EC7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>target</key>
+			<string>1C5BAF91C33E0D9A8AAA29D17DE47807</string>
+			<key>targetProxy</key>
+			<string>693941689CD1900B3DB660DAD058B1E6</string>
 		</dict>
 		<key>768830702D28D5EFA428316002777C18</key>
 		<dict>
@@ -1661,6 +1974,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>799C260B10C98C46C5E0C2190B5B0E99</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4A9C225E21EAB58C9E49CE7BEB3A2086</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -1682,9 +2008,22 @@
 			<key>productName</key>
 			<string>Alamofire</string>
 			<key>productReference</key>
-			<string>2CA5CB0C1B99524D975D61128D8860CB</string>
+			<string>4C700AFF184B4F89480D62ADED010DA4</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>79E69ABE4B903511A83BD8943D24B0C8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7A0D97E0CEF66081C8456B9A58508381</key>
 		<dict>
@@ -1713,6 +2052,19 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>7B776E464C22BD5E7EBD1DD61A9CAEB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7BF426063694D780CB8A77CE24C67A5B</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1740,8 +2092,8 @@
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>433CD3331B6C3787F473C941B61FC68F</string>
 				<string>BCA0D97FE34C4EB17AF64BE56BF47937</string>
-				<string>AB43B415E423B1A6D5EE44FAFB29A38A</string>
-				<string>BE70BC91EFE03ECF239A7A0CF66EDA81</string>
+				<string>EDB7E9D260B30F48186DAB183876E195</string>
+				<string>54D51EC23EEE285F4811397EDA0C41DC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1754,6 +2106,17 @@
 			<string>C9B7B3A7EA2C4C8ED74D71876B8EE8BA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>80048C5504E556CD1C7484A46CDAA810</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>KeychainAccess</string>
+			<key>target</key>
+			<string>838A2C6DA366DE138E5FDF1AF19D94C0</string>
+			<key>targetProxy</key>
+			<string>A94E98A15B59758BBB968458F4047749</string>
 		</dict>
 		<key>8121CD3B053AB0F4851427F220B64758</key>
 		<dict>
@@ -1802,7 +2165,7 @@
 			<key>productName</key>
 			<string>KeychainAccess</string>
 			<key>productReference</key>
-			<string>CA70AEDA94F88D29F6D117800F40D5C7</string>
+			<string>1ED12FADF3E8F2E683B0445A00D7D47B</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -1818,19 +2181,6 @@
 			<string>Keychain.swift</string>
 			<key>path</key>
 			<string>Lib/KeychainAccess/Keychain.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8652B30BABE945A09B5029F73C7077AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1999,6 +2349,19 @@
 			<string>../Target Support Files/KeychainAccess</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F91F53812CF4BB43E9BA0785019A269</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A0618E9F00EDF2AC0B7F602F93B5F439</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>903BF803340454FD718D594C94C941E6</key>
 		<dict>
@@ -2212,6 +2575,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>99288651A1D7E62E92BCEEFBEE5F9A9D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BA1C6AA3A83B9B5E937D4D39E11C6568</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9A4F52EE2CB852259BC07AD7D9DD6022</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9AD5BDD41EEC297DBAF323239E5FDAA1</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2265,6 +2654,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>A0618E9F00EDF2AC0B7F602F93B5F439</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1ADAC9B641F8A4D3A22CB63C90E2126E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>A38DDFEC7DF980C21568860ECC2C49FF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2292,6 +2695,104 @@
 			<string>Sources/Operators.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5D136B42E3BC5357CFB55123E240C30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5E21FD68A31C5AE7E54EC727D6E3F23</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Gloss.framework</string>
+			<key>path</key>
+			<string>Gloss.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A649B6B2ECD5F5232639A97126635AB9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D34F43B0A098E3F52B9FAAD96583A8C7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-whale_ios_nabilTests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_whale_ios_nabilTests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>A78FFB80D5C3A09C1F8333D5CAA08C63</key>
 		<dict>
@@ -2350,6 +2851,19 @@
 			<string>Gloss</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A94E98A15B59758BBB968458F4047749</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>838A2C6DA366DE138E5FDF1AF19D94C0</string>
+			<key>remoteInfo</key>
+			<string>KeychainAccess</string>
 		</dict>
 		<key>A9E8533E615EA7FD02D27524E68EE149</key>
 		<dict>
@@ -2429,24 +2943,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>AB43B415E423B1A6D5EE44FAFB29A38A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2CA5CB0C1B99524D975D61128D8860CB</string>
-				<string>FE536886B490EDB5F7C039F1544B764E</string>
-				<string>CA70AEDA94F88D29F6D117800F40D5C7</string>
-				<string>F26008ADDC58AF3CDE307D5B0C5FB80E</string>
-				<string>42F200C1F9BBF176E9FC68A006D31899</string>
-				<string>D1C35A4242E0377E2ABE59200279031D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>AB98BD1B2C8053A6506666ED3E1E647A</key>
 		<dict>
 			<key>fileRef</key>
@@ -2467,6 +2963,17 @@
 			<string>BC4DC3D8EFEFCB57DD743BA66A83A5F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD0C280DCD6793B1026CA8EB5D530CB0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Gloss</string>
+			<key>target</key>
+			<string>C1B8CA229C9AF3CEBF0EB217B203B49C</string>
+			<key>targetProxy</key>
+			<string>BF628CB59D6C2B3C192D96887AF91936</string>
 		</dict>
 		<key>AD9AEC7719216D1FB4E964D5546B84E3</key>
 		<dict>
@@ -2602,16 +3109,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B3B6CC9B37060F63F848A60912E4DD1D</key>
+		<key>B4FD7F333D613F3A3B33C01AD07D1686</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Kingfisher.framework</string>
 			<key>path</key>
-			<string>Pods-whale_ios_nabil.modulemap</string>
+			<string>Kingfisher.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>B54E278B102D7CD2CDBF54E0595FD29F</key>
 		<dict>
@@ -2634,19 +3145,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B82FDFBD68FA94B4A36AEFDDD239507C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>B85ACCB4F009F31A5FC786B51FD4EFC4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2661,6 +3159,13 @@
 			<string>Sources/KingfisherManager.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA1C6AA3A83B9B5E937D4D39E11C6568</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BC4DC3D8EFEFCB57DD743BA66A83A5F6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>BC4DC3D8EFEFCB57DD743BA66A83A5F6</key>
 		<dict>
@@ -2719,19 +3224,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>BE70BC91EFE03ECF239A7A0CF66EDA81</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>64297BB55EF0A1395889AC96437E86C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>BEDF743866BA686E64E986E56EE8822B</key>
 		<dict>
 			<key>children</key>
@@ -2774,7 +3266,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BFC933583B5BD8823731A5C661EF70A4</key>
+		<key>BF628CB59D6C2B3C192D96887AF91936</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C1B8CA229C9AF3CEBF0EB217B203B49C</string>
+			<key>remoteInfo</key>
+			<string>Gloss</string>
+		</dict>
+		<key>C04AA234EF96EBC7B979F6D6D08CC48B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2783,7 +3288,7 @@
 			<key>lastKnownFileType</key>
 			<string>text.script.sh</string>
 			<key>path</key>
-			<string>Pods-whale_ios_nabil-resources.sh</string>
+			<string>Pods-whale_ios_nabil-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2844,22 +3349,9 @@
 			<key>productName</key>
 			<string>Gloss</string>
 			<key>productReference</key>
-			<string>FE536886B490EDB5F7C039F1544B764E</string>
+			<string>A5E21FD68A31C5AE7E54EC727D6E3F23</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>C332815EEE1F855CE24A34FAC0C886CB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C3A073E01EFADB8062952051BC4CB3D9</key>
 		<dict>
@@ -2868,10 +3360,23 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>C6285352531877CDC518711B497C3721</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C7314B2464E47E49CAC0C2C5D8CC85A2</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B82FDFBD68FA94B4A36AEFDDD239507C</string>
+			<string>E558082125F0AC09B5BE4B5F3E3E42BA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2996,21 +3501,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CA70AEDA94F88D29F6D117800F40D5C7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>KeychainAccess.framework</string>
-			<key>path</key>
-			<string>KeychainAccess.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>CAF67067D754172F0D920AAF1DED0784</key>
 		<dict>
 			<key>children</key>
@@ -3091,33 +3581,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D106D63A358592B63D461F9DB275ECB7</key>
+		<key>D239E279B437E8CE73C9AA8214DB4B92</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>Pods-whale_ios_nabilTests-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D1C35A4242E0377E2ABE59200279031D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SwiftyJSON.framework</string>
-			<key>path</key>
-			<string>SwiftyJSON.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>D2CB8DED40E975CC459D4D27E5F3AB83</key>
 		<dict>
@@ -3188,6 +3663,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>D34F43B0A098E3F52B9FAAD96583A8C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
 			<key>attributes</key>
@@ -3214,7 +3702,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>AB43B415E423B1A6D5EE44FAFB29A38A</string>
+			<string>EDB7E9D260B30F48186DAB183876E195</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -3228,6 +3716,7 @@
 				<string>838A2C6DA366DE138E5FDF1AF19D94C0</string>
 				<string>1DE93A359FA21F91DFBE81309E851A4A</string>
 				<string>5E583468A1962F0265637BCB90AFC50A</string>
+				<string>133C6CDEB0386562C557A886F04D2CC8</string>
 				<string>1C5BAF91C33E0D9A8AAA29D17DE47807</string>
 			</array>
 		</dict>
@@ -3264,7 +3753,7 @@
 		<key>D7F7319F4FD134292EB0E3ED9F407635</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C332815EEE1F855CE24A34FAC0C886CB</string>
+			<string>1023540DDDEA9536052B0020E865A20C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3274,6 +3763,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>D96782006E4CAE56C0473E49BAAAEA0A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D96A6C6E1676F9832AA3BE49E22AAEBA</key>
 		<dict>
@@ -3288,6 +3790,33 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>DA5FE325C9666391EDE3F8ADB5607594</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB301117B5223377CA991E2C82E30F45</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>14B79DFDD1E103631C30523BBD882393</string>
+				<string>A649B6B2ECD5F5232639A97126635AB9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>DE1E9599785F7916818AAF914F222473</key>
 		<dict>
@@ -3438,6 +3967,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>E558082125F0AC09B5BE4B5F3E3E42BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabil.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E59BF19C0AFA68B741552319FC478C7B</key>
 		<dict>
 			<key>fileRef</key>
@@ -3551,19 +4093,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>ECF6498E225BFB237679A9B62B546FE7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-whale_ios_nabil.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>ED30C1EDAD9D36CB496795EC6FFB3DAE</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3576,6 +4105,25 @@
 			<string>UIButton+Kingfisher.swift</string>
 			<key>path</key>
 			<string>Sources/UIButton+Kingfisher.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDB7E9D260B30F48186DAB183876E195</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C700AFF184B4F89480D62ADED010DA4</string>
+				<string>A5E21FD68A31C5AE7E54EC727D6E3F23</string>
+				<string>1ED12FADF3E8F2E683B0445A00D7D47B</string>
+				<string>B4FD7F333D613F3A3B33C01AD07D1686</string>
+				<string>2CA3E3D0F6DF65FB5D13524792981F94</string>
+				<string>3E3E4C43B26C23D63D376676F0CA9B98</string>
+				<string>FFAE05D36FF7C52CAEC8A9D916F5CCA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3663,21 +4211,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>F26008ADDC58AF3CDE307D5B0C5FB80E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Kingfisher.framework</string>
-			<key>path</key>
-			<string>Kingfisher.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>F27DAF56D35CE363CC8D110FBA3A312C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3705,6 +4238,17 @@
 			<string>838A2C6DA366DE138E5FDF1AF19D94C0</string>
 			<key>remoteInfo</key>
 			<string>KeychainAccess</string>
+		</dict>
+		<key>F532FF973850A5F19340BA597464ADB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-whale_ios_nabilTests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F6618F646891CF8FD248E090C7AAC9A0</key>
 		<dict>
@@ -3764,21 +4308,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>FE536886B490EDB5F7C039F1544B764E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Gloss.framework</string>
-			<key>path</key>
-			<string>Gloss.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>FEC669FD1F3D2051AB8A657E45F171AE</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -3817,6 +4346,21 @@
 			<string>Gloss.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFAE05D36FF7C52CAEC8A9D916F5CCA4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SwiftyJSON.framework</string>
+			<key>path</key>
+			<string>SwiftyJSON.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>FFFDD494EE6D1B83DDAF5F2721F685A6</key>
 		<dict>

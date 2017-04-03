@@ -24,13 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if KeyManager.instance.hasToken(){
             
-            initialController = storyboard.instantiateViewController(withIdentifier: "homeScreen") // as homeController
+            initialController = storyboard.instantiateViewController(withIdentifier: "HomeScreen") // as homeController
             }
         
         else {
             
             // take user to login screen
-            initialController = storyboard.instantiateViewController(withIdentifier: "login")
+            initialController = storyboard.instantiateViewController(withIdentifier: "LoginController")
         }
 
         return true

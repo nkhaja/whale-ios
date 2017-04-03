@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		509AE7C665C3E0695941C410 /* Pods_whale_ios_nabilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */; };
+		BD5650B41E8B65B400989D35 /* whale_ios_nabilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */; };
+		BD5650BB1E8B8E6600989D35 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
+		BD5650BC1E8B8E7300989D35 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C36531E82E1AF00A8235C /* Networking.swift */; };
+		BD5650BD1E8B8E7C00989D35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF71E83773000575B32 /* User.swift */; };
+		BD5650BE1E8B8E7F00989D35 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF101221E85D07F00499EF4 /* Question.swift */; };
+		BD5650BF1E8B8E8200989D35 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC14D1E80509C00BA43D9 /* Answer.swift */; };
+		BD5650C11E8C1E0A00989D35 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650C01E8C1E0A00989D35 /* SignUpController.swift */; };
+		BD5650C21E8C359F00989D35 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF101201E8594F000499EF4 /* Keys.swift */; };
+		BD5650C31E8C375700989D35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF31E82EAE800575B32 /* Constants.swift */; };
+		BD5650C41E8C377E00989D35 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB65F01E88A2BC00A676C3 /* Protocols.swift */; };
+		BD5650C61E8D880D00989D35 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650C51E8D880D00989D35 /* AnswerCell.swift */; };
 		BD588FF41E82EAE800575B32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF31E82EAE800575B32 /* Constants.swift */; };
 		BD588FF61E82F77D00575B32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
 		BD588FF81E83773000575B32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF71E83773000575B32 /* User.swift */; };
@@ -16,15 +28,38 @@
 		BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC1391E8047A000BA43D9 /* Main.storyboard */; };
 		BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */; };
 		BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */; };
-		BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */; };
-		BDF1011F1E858ACC00499EF4 /* gloss_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF1011E1E858ACC00499EF4 /* gloss_test.swift */; };
+		BDDFC14E1E80509C00BA43D9 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC14D1E80509C00BA43D9 /* Answer.swift */; };
 		BDF101211E8594F000499EF4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF101201E8594F000499EF4 /* Keys.swift */; };
+		BDF101231E85D07F00499EF4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF101221E85D07F00499EF4 /* Question.swift */; };
+		BDF532BE1E8E02F900291D04 /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF532BD1E8E02F900291D04 /* Pager.swift */; };
+		BDFB65EF1E88939700A676C3 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB65EE1E88939700A676C3 /* AnswerViewController.swift */; };
+		BDFB65F11E88A2BC00A676C3 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB65F01E88A2BC00A676C3 /* Protocols.swift */; };
+		BDFB65F41E8980B900A676C3 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFB65F31E8980B900A676C3 /* AnswerCell.xib */; };
+		BDFB65F71E8B61E000A676C3 /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB65F61E8B61E000A676C3 /* NetworkingTest.swift */; };
 		CE60A30B664070B2E3AA3502 /* Pods_whale_ios_nabil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BD5650B61E8B65B400989D35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDFC12A1E8047A000BA43D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDFC1311E8047A000BA43D9;
+			remoteInfo = whale_ios_nabil;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1510373776339B2E99B809A0 /* Pods-whale_ios_nabilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EFECD342ABD395AFF6B0ECB /* Pods-whale_ios_nabilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.debug.xcconfig"; sourceTree = "<group>"; };
 		7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.release.xcconfig"; sourceTree = "<group>"; };
+		886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whale_ios_nabilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_nabilTests.swift; sourceTree = "<group>"; };
+		BD5650B51E8B65B400989D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5650C01E8C1E0A00989D35 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		BD5650C51E8D880D00989D35 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		BD588FF31E82EAE800575B32 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD588FF51E82F77D00575B32 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BD588FF71E83773000575B32 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -36,13 +71,26 @@
 		BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDFC13F1E8047A000BA43D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDDFC1411E8047A000BA43D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
-		BDF1011E1E858ACC00499EF4 /* gloss_test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gloss_test.swift; sourceTree = "<group>"; };
+		BDDFC14D1E80509C00BA43D9 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		BDF101201E8594F000499EF4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		BDF101221E85D07F00499EF4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BDF532BD1E8E02F900291D04 /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
+		BDFB65EE1E88939700A676C3 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		BDFB65F01E88A2BC00A676C3 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		BDFB65F31E8980B900A676C3 /* AnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		BDFB65F61E8B61E000A676C3 /* NetworkingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingTest.swift; path = ../whale_ios_nabil/NetworkingTest.swift; sourceTree = "<group>"; };
 		DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BD5650AE1E8B65B400989D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509AE7C665C3E0695941C410 /* Pods_whale_ios_nabilTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDDFC12F1E8047A000BA43D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,14 +106,26 @@
 			isa = PBXGroup;
 			children = (
 				DF32EEC63A8AB54285229760 /* Pods_whale_ios_nabil.framework */,
+				886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD5650B21E8B65B400989D35 /* whale_ios_nabilTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDFB65F61E8B61E000A676C3 /* NetworkingTest.swift */,
+				BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */,
+				BD5650B51E8B65B400989D35 /* Info.plist */,
+			);
+			path = whale_ios_nabilTests;
 			sourceTree = "<group>";
 		};
 		BDDFC1291E8047A000BA43D9 = {
 			isa = PBXGroup;
 			children = (
 				BDDFC1341E8047A000BA43D9 /* whale_ios_nabil */,
+				BD5650B21E8B65B400989D35 /* whale_ios_nabilTests */,
 				BDDFC1331E8047A000BA43D9 /* Products */,
 				E851056D1A06AE91D1FAA476 /* Pods */,
 				132F1F179FE43DB6AE067F6D /* Frameworks */,
@@ -76,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BDDFC1321E8047A000BA43D9 /* whale_ios_nabil.app */,
+				BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,10 +147,18 @@
 				BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */,
 				BDF101201E8594F000499EF4 /* Keys.swift */,
 				BDDFC1371E8047A000BA43D9 /* LoginController.swift */,
+				BDFB65F01E88A2BC00A676C3 /* Protocols.swift */,
+				BDFB65EE1E88939700A676C3 /* AnswerViewController.swift */,
+				BD5650C01E8C1E0A00989D35 /* SignUpController.swift */,
+				BDF532BD1E8E02F900291D04 /* Pager.swift */,
+				BD5650C51E8D880D00989D35 /* AnswerCell.swift */,
+				BDFB65F21E88A33A00A676C3 /* Models */,
 				BDDFC1471E804EB400BA43D9 /* Extensions */,
 				BDDFC1481E804EDA00BA43D9 /* UI */,
+				BDFB65F51E8B61BC00A676C3 /* Tests */,
 				BDDFC14C1E80504F00BA43D9 /* Networking */,
 				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
+				BDFB65F31E8980B900A676C3 /* AnswerCell.xib */,
 				BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */,
 				BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */,
 				BDDFC1411E8047A000BA43D9 /* Info.plist */,
@@ -138,14 +207,28 @@
 		BDDFC14C1E80504F00BA43D9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				BDDFC14D1E80509C00BA43D9 /* AnswerModel.swift */,
-				BD588FF71E83773000575B32 /* User.swift */,
 				BD8C36531E82E1AF00A8235C /* Networking.swift */,
-				BDF1011E1E858ACC00499EF4 /* gloss_test.swift */,
 				BD588FF51E82F77D00575B32 /* Service.swift */,
 				BD588FF31E82EAE800575B32 /* Constants.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		BDFB65F21E88A33A00A676C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD588FF71E83773000575B32 /* User.swift */,
+				BDF101221E85D07F00499EF4 /* Question.swift */,
+				BDDFC14D1E80509C00BA43D9 /* Answer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BDFB65F51E8B61BC00A676C3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		E851056D1A06AE91D1FAA476 /* Pods */ = {
@@ -153,6 +236,8 @@
 			children = (
 				6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */,
 				7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */,
+				3EFECD342ABD395AFF6B0ECB /* Pods-whale_ios_nabilTests.debug.xcconfig */,
+				1510373776339B2E99B809A0 /* Pods-whale_ios_nabilTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -160,6 +245,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BD5650B01E8B65B400989D35 /* whale_ios_nabilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD5650BA1E8B65B500989D35 /* Build configuration list for PBXNativeTarget "whale_ios_nabilTests" */;
+			buildPhases = (
+				E716D5AF62D53BE4C89F2AA5 /* [CP] Check Pods Manifest.lock */,
+				BD5650AD1E8B65B400989D35 /* Sources */,
+				BD5650AE1E8B65B400989D35 /* Frameworks */,
+				BD5650AF1E8B65B400989D35 /* Resources */,
+				CB5947C8A46F8D08A1375031 /* [CP] Embed Pods Frameworks */,
+				B3262CAE8AF812A1E1C57482 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD5650B71E8B65B400989D35 /* PBXTargetDependency */,
+			);
+			name = whale_ios_nabilTests;
+			productName = whale_ios_nabilTests;
+			productReference = BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BDDFC1311E8047A000BA43D9 /* whale_ios_nabil */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDFC1441E8047A000BA43D9 /* Build configuration list for PBXNativeTarget "whale_ios_nabil" */;
@@ -190,6 +296,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MakeSchool;
 				TargetAttributes = {
+					BD5650B01E8B65B400989D35 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PU7KSX8Z6J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDDFC1311E8047A000BA43D9;
+					};
 					BDDFC1311E8047A000BA43D9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PU7KSX8Z6J;
@@ -211,15 +323,24 @@
 			projectRoot = "";
 			targets = (
 				BDDFC1311E8047A000BA43D9 /* whale_ios_nabil */,
+				BD5650B01E8B65B400989D35 /* whale_ios_nabilTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BD5650AF1E8B65B400989D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDDFC1301E8047A000BA43D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFB65F41E8980B900A676C3 /* AnswerCell.xib in Resources */,
 				BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */,
 				BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */,
 				BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */,
@@ -259,6 +380,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B3262CAE8AF812A1E1C57482 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7B22A021887FB5712901A9E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,26 +410,86 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CB5947C8A46F8D08A1375031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale_ios_nabilTests/Pods-whale_ios_nabilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E716D5AF62D53BE4C89F2AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BD5650AD1E8B65B400989D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5650BE1E8B8E7F00989D35 /* Question.swift in Sources */,
+				BD5650BD1E8B8E7C00989D35 /* User.swift in Sources */,
+				BD5650BC1E8B8E7300989D35 /* Networking.swift in Sources */,
+				BD5650C41E8C377E00989D35 /* Protocols.swift in Sources */,
+				BD5650BF1E8B8E8200989D35 /* Answer.swift in Sources */,
+				BD5650C21E8C359F00989D35 /* Keys.swift in Sources */,
+				BD5650B41E8B65B400989D35 /* whale_ios_nabilTests.swift in Sources */,
+				BD5650BB1E8B8E6600989D35 /* Service.swift in Sources */,
+				BD5650C31E8C375700989D35 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDDFC12E1E8047A000BA43D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5650C11E8C1E0A00989D35 /* SignUpController.swift in Sources */,
 				BD588FF41E82EAE800575B32 /* Constants.swift in Sources */,
-				BDDFC14E1E80509C00BA43D9 /* AnswerModel.swift in Sources */,
-				BDF1011F1E858ACC00499EF4 /* gloss_test.swift in Sources */,
+				BDDFC14E1E80509C00BA43D9 /* Answer.swift in Sources */,
+				BDFB65EF1E88939700A676C3 /* AnswerViewController.swift in Sources */,
 				BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */,
+				BDF101231E85D07F00499EF4 /* Question.swift in Sources */,
+				BDF532BE1E8E02F900291D04 /* Pager.swift in Sources */,
 				BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */,
+				BDFB65F11E88A2BC00A676C3 /* Protocols.swift in Sources */,
+				BDFB65F71E8B61E000A676C3 /* NetworkingTest.swift in Sources */,
 				BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */,
 				BD588FF61E82F77D00575B32 /* Service.swift in Sources */,
+				BD5650C61E8D880D00989D35 /* AnswerCell.swift in Sources */,
 				BDF101211E8594F000499EF4 /* Keys.swift in Sources */,
 				BD588FF81E83773000575B32 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD5650B71E8B65B400989D35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDFC1311E8047A000BA43D9 /* whale_ios_nabil */;
+			targetProxy = BD5650B61E8B65B400989D35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BDDFC1391E8047A000BA43D9 /* Main.storyboard */ = {
@@ -315,6 +511,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BD5650B81E8B65B400989D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFECD342ABD395AFF6B0ECB /* Pods-whale_ios_nabilTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
+				INFOPLIST_FILE = whale_ios_nabilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Makeschool.whale-ios-nabilTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale_ios_nabil.app/whale_ios_nabil";
+			};
+			name = Debug;
+		};
+		BD5650B91E8B65B400989D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1510373776339B2E99B809A0 /* Pods-whale_ios_nabilTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
+				INFOPLIST_FILE = whale_ios_nabilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Makeschool.whale-ios-nabilTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale_ios_nabil.app/whale_ios_nabil";
+			};
+			name = Release;
+		};
 		BDDFC1421E8047A000BA43D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,6 +665,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD5650BA1E8B65B500989D35 /* Build configuration list for PBXNativeTarget "whale_ios_nabilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5650B81E8B65B400989D35 /* Debug */,
+				BD5650B91E8B65B400989D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BDDFC12D1E8047A000BA43D9 /* Build configuration list for PBXProject "whale_ios_nabil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

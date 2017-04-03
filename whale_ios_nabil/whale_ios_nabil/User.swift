@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SwiftyJSON
 
-class User {
+class User: Failable {
     
     var email: String
     var firstName: String
@@ -36,15 +36,15 @@ class User {
     }
     
     
-    init?(json:JSON){
+    required init?(json:JSON){
         
         guard
         
         let username = json[UserConstants.username].string,
         let firstName = json[UserConstants.firstName].string,
         let lastName = json[UserConstants.lastName].string,
-        let email = json[UserConstants.email].string,
-        let id = json[UserConstants.username].int
+        let email = json[UserConstants.email].string
+//        let id = json[UserConstants.username].int
 
         else {
             return nil
@@ -54,7 +54,7 @@ class User {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
-        self.id = id
+        self.id = 0
         
         
         if let followingCount = json[UserConstants.followingCount].int{

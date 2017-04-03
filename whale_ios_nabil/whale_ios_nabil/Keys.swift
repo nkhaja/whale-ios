@@ -14,21 +14,21 @@ class KeyManager{
     
     
     static let instance = KeyManager()
-    var token: String?
-    var keyChain = Keychain()
+    
+    let keyChain = Keychain()
     
     
     
     func hasToken() -> Bool {
     
-        let exists = token != nil
+        let exists = keyChain[UserConstants.authentication] != nil
         return exists
         
     }
     
     func getToken() -> String? {
         
-        return token
+        return keyChain[UserConstants.authentication]
         
     }
     

@@ -8,27 +8,53 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 
 // sample auth: user: gordonelliel, pass: example
 
 
-struct Answer {
+struct Answer: Failable {
     
-    var video: URL
-    var thumbnail: UIImage
-    var question: String
-    var likeCount: Int
-    var commentCount: Int
+    var videoUrl: URL
+    var thumbnailUrl: URL
+    var video: URL?
+    var thumbnail: UIImage?
+    var question: Question
+    var likeCount: Int = 0
+    var commentCount: Int = 0
     
-    init(video: URL, thumbnail: UIImage, question:String, likeCount: Int, commentCount: Int){
+    init(videoUrl: URL, thumbnailUrl: URL, question:Question){
         
-        self.video = video
-        self.thumbnail = thumbnail
+        self.videoUrl = videoUrl
+        self.thumbnailUrl = thumbnailUrl
         self.question = question
-        self.likeCount = likeCount
-        self.commentCount = commentCount
+ 
     }
     
+    
+    init?(json: JSON){
+        
+        guard
+        
+        let videoUrl = json[AnswerConstants.videoUrl].url,
+        let thumbnailUrl = json[AnswerConstants.thumbnail_url].url,
+        let question = Question(json: json[AnswerConstants.question])
+        
+            else { return nil}
+        
+        self.videoUrl = videoUrl
+        self.thumbnailUrl = thumbnailUrl
+        self.question = question
+        
+        if let likes  = json[AnswerConstants.likes_count].int{
+            self.likeCount = likes
+        }
+        
+        if let comments  = json[AnswerConstants.comment_count].int{
+            self.commentCount = comments
+        }
+
+    }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 import KeychainAccess
-
+import Alamofire
 class LoginController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,26 +18,25 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     
     
     func loginUser(email:String, password: String){
         
-        WhaleService.loginUser(email: email, password: password) { [weak self] user, token, error  in
+        WhaleService.loginUser(email: email, password: password) { result  in
             
-            if error != nil {
-                return
-            }
+            switch result {
             
-            guard let user = user else{
-                return
-            }
-            
-            if let token = token{
+            case let .success(token):
                 
                 KeyManager.instance.assignToken(token: token)
+
+            case let .failure(error):
                 
+                print(error.localizedDescription)
+            
             }
             
         }

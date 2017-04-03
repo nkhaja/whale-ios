@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.4.0)
-  - Gloss (1.2.1)
+  - Gloss (1.2.2)
   - KeychainAccess (3.0.1)
-  - Kingfisher (3.5.2)
+  - Kingfisher (3.6.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -14,11 +14,11 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  Gloss: 9ab33b8ede01e4232571d43a6bf9259b85d1de69
+  Gloss: 2888941ffde93ae173da737414ba7193e4347d86
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
-  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  Kingfisher: 300035f9a40634dc9b452d946c9f22250688fecd
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 6ee35665b9cda8daf1631e48c5669ba8eaa1dff3
+PODFILE CHECKSUM: aa8cac275ce7786a438e67ba64347d8d1b3bc9af
 
 COCOAPODS: 1.0.1

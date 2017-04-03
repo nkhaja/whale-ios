@@ -13,7 +13,7 @@ import Alamofire
 
 enum WhaleRouter : URLRequestConvertible {
     
-    static let pageSize = 10
+    static let pageSize = 4
     
     
     case getUsers(page: Int)
@@ -94,13 +94,16 @@ enum WhaleRouter : URLRequestConvertible {
         var paramDict : [String: Any] = [:]
         
         switch self {
+        
         case let .getUsers(page), let .getAnswers(page: page), let .getMyQuestions(page: page):
             paramDict["page"] = page
             paramDict["per_page"] = WhaleRouter.pageSize
             
+        
         case let .loginUser(email, password):
             paramDict["email"] = email
             paramDict["password"] = password
+        
         
         default:
             break
@@ -124,16 +127,39 @@ enum WhaleRouter : URLRequestConvertible {
     }
     
     
+    var headers: HTTPHeaders {
+        
+        var headers : [String:String] = [:]
+        
+        
+        switch self {
+            
+        case .getAnswers, .getAnswerLikes, .getAnswerComments, .createAnswer, .getMyQuestions, .createQuestion, .createAnswer:
+            
+            headers[UserConstants.authentication] = KeyManager.instance.getToken()!
+            
+        default:
+            break
+        }
+        
+        return headers
+        
+    }
+    
+    
+    
     func asURLRequest() throws -> URLRequest {
         
         let url = try NetworkingConstants.baseUrl.asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         
         urlRequest.httpMethod = method.rawValue
+        urlRequest.allHTTPHeaderFields = headers
         
+        print(urlRequest.url?.absoluteString)
         
         return try URLEncoding.methodDependent.encode(urlRequest, with: parameters)
-        
+
     }
 }
 
@@ -143,3 +169,4 @@ enum paging {
     case pageDown
     
 }
+

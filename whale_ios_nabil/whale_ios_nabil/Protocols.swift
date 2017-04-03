@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+protocol Failable {
+    
+    init?(json: JSON)
+    
+}
+
+
+
