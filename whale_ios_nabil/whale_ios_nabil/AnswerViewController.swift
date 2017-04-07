@@ -82,18 +82,25 @@ extension AnswerViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let receiver = currentQuestion.receiver
         let sender = currentQuestion.sender
         
-        
+        cell.videoThumbnail.kf.setImage(with: currentAnswer.thumbnailUrl)
         
         cell.questionLabel.text = currentQuestion.question
-        cell.videoThumbnail.kf.setImage(with: currentAnswer.thumbnailUrl)
-
         cell.senderNameLabel.text = sender.userName
-        cell.senderImageView.kf.setImage(with: sender.imageUrl)
+        
+        if let url =  sender.imageUrl{
+            cell.senderImageView.kf.setImage(with: url)
+        }
+        
+    
         
         
         cell.receiverName.text = receiver.userName
         cell.receiverRole.text = receiver.firstName
-        cell.receiverImageView.kf.setImage(with: receiver.imageUrl)
+        
+        if let url =  receiver.imageUrl{
+            cell.receiverImageView.kf.setImage(with: url)
+
+        }
         
         return cell
         
