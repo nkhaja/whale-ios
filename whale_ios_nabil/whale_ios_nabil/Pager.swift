@@ -66,7 +66,7 @@ struct Pager {
     }
     
     
-    mutating func updatePageInfo(getDataFunction: () -> ()){
+    mutating func updatePageInfo(getDataFunction: () -> Void){
         
         if !self.isupdating && self.hasMorePages() {
             self.page += 1

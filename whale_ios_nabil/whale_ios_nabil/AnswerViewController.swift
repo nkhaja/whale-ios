@@ -106,27 +106,13 @@ extension AnswerViewController: UIScrollViewDelegate{
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         
-        if scrollView == collectionView{
+        if scrollView == collectionView && scrollView.reachingEnd(){
             
-            if ((scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height){
-                
-                if !pager.isupdating && pager.hasMorePages() {
-                    pager.page += 1
-                    pager.isupdating = true
-                    self.getAnswers()
-                    
-                }
-                
-                // Check to see if total number of pages has changed
-                else if !pager.isupdating {
-                    pager.isupdating = true
-                    self.getAnswers()
-                }
-                
-            }
-            
+            pager.updatePageInfo(getDataFunction: getAnswers)
         }
 
     }
     
 }
+
+
