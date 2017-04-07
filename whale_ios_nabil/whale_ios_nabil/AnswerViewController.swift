@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 import Kingfisher
 
-class AnswerViewController: UIViewController {
+class AnswerViewController: UIViewController, Pageable {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -54,6 +54,7 @@ class AnswerViewController: UIViewController {
         
         })
     }
+    
     
     func loadNibs(){
         
@@ -125,8 +126,7 @@ extension AnswerViewController: UIScrollViewDelegate{
             }
             
         }
-        
-        
+
     }
     
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		509AE7C665C3E0695941C410 /* Pods_whale_ios_nabilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */; };
+		BD454C9D1E97FD8C008CF14C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD454C9C1E97FD8C008CF14C /* Comment.swift */; };
 		BD5650B41E8B65B400989D35 /* whale_ios_nabilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */; };
 		BD5650BB1E8B8E6600989D35 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
 		BD5650BC1E8B8E7300989D35 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C36531E82E1AF00A8235C /* Networking.swift */; };
@@ -23,6 +24,7 @@
 		BD588FF61E82F77D00575B32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
 		BD588FF81E83773000575B32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF71E83773000575B32 /* User.swift */; };
 		BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C36531E82E1AF00A8235C /* Networking.swift */; };
+		BDCB16C11E92C945006EA7C7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB16C01E92C945006EA7C7 /* VideoView.swift */; };
 		BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */; };
 		BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDFC1371E8047A000BA43D9 /* LoginController.swift */; };
 		BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDFC1391E8047A000BA43D9 /* Main.storyboard */; };
@@ -55,6 +57,7 @@
 		6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.debug.xcconfig"; sourceTree = "<group>"; };
 		7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.release.xcconfig"; sourceTree = "<group>"; };
 		886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD454C9C1E97FD8C008CF14C /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whale_ios_nabilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_nabilTests.swift; sourceTree = "<group>"; };
 		BD5650B51E8B65B400989D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		BD588FF51E82F77D00575B32 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BD588FF71E83773000575B32 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD8C36531E82E1AF00A8235C /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		BDCB16C01E92C945006EA7C7 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		BDDFC1321E8047A000BA43D9 /* whale_ios_nabil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whale_ios_nabil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDFC1351E8047A000BA43D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDFC1371E8047A000BA43D9 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				BDFB65F51E8B61BC00A676C3 /* Tests */,
 				BDDFC14C1E80504F00BA43D9 /* Networking */,
 				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
+				BDCB16C01E92C945006EA7C7 /* VideoView.swift */,
 				BDFB65F31E8980B900A676C3 /* AnswerCell.xib */,
 				BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */,
 				BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */,
@@ -219,6 +224,7 @@
 			children = (
 				BD588FF71E83773000575B32 /* User.swift */,
 				BDF101221E85D07F00499EF4 /* Question.swift */,
+				BD454C9C1E97FD8C008CF14C /* Comment.swift */,
 				BDDFC14D1E80509C00BA43D9 /* Answer.swift */,
 			);
 			name = Models;
@@ -468,6 +474,7 @@
 				BDDFC14E1E80509C00BA43D9 /* Answer.swift in Sources */,
 				BDFB65EF1E88939700A676C3 /* AnswerViewController.swift in Sources */,
 				BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */,
+				BD454C9D1E97FD8C008CF14C /* Comment.swift in Sources */,
 				BDF101231E85D07F00499EF4 /* Question.swift in Sources */,
 				BDF532BE1E8E02F900291D04 /* Pager.swift in Sources */,
 				BDDFC1361E8047A000BA43D9 /* AppDelegate.swift in Sources */,
@@ -475,6 +482,7 @@
 				BDFB65F71E8B61E000A676C3 /* NetworkingTest.swift in Sources */,
 				BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */,
 				BD588FF61E82F77D00575B32 /* Service.swift in Sources */,
+				BDCB16C11E92C945006EA7C7 /* VideoView.swift in Sources */,
 				BD5650C61E8D880D00989D35 /* AnswerCell.swift in Sources */,
 				BDF101211E8594F000499EF4 /* Keys.swift in Sources */,
 				BD588FF81E83773000575B32 /* User.swift in Sources */,

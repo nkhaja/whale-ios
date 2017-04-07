@@ -66,6 +66,24 @@ struct Pager {
     }
     
     
+    mutating func updatePageInfo(getDataFunction: () -> ()){
+        
+        if !self.isupdating && self.hasMorePages() {
+            self.page += 1
+            self.isupdating = true
+            getDataFunction()
+            
+        }
+            
+            // Check to see if total number of pages has changed
+        else if !self.isupdating {
+            self.isupdating = true
+            getDataFunction()
+        }
+        
+    }
+    
+    
 }
 
 

@@ -21,7 +21,7 @@ enum WhaleRouter : URLRequestConvertible {
     case loginUser(email: String, password: String)
     
     case getAnswers(page: Int)
-    case getAnswerComments(answerId: String)
+    case getAnswerComments(answerId: String, page: Int)
     case getAnswerLikes(answerId : String)
     case createAnswer
     
@@ -50,7 +50,7 @@ enum WhaleRouter : URLRequestConvertible {
             return NetworkingConstants.answers + "/" + answerId + NetworkingConstants.likes
         
        
-        case let .getAnswerComments(answerId):
+        case let .getAnswerComments(answerId, _):
             return NetworkingConstants.answers + "/" + answerId + NetworkingConstants.comments
             
     
@@ -95,7 +95,7 @@ enum WhaleRouter : URLRequestConvertible {
         
         switch self {
         
-        case let .getUsers(page), let .getAnswers(page: page), let .getMyQuestions(page: page):
+        case let .getUsers(page), let .getAnswers(page: page), let .getAnswerComments(_, page), let .getMyQuestions(page: page):
             paramDict["page"] = page
             paramDict["per_page"] = WhaleRouter.pageSize
             

@@ -24,6 +24,15 @@ struct NetworkingConstants{
     static let total_pages = "total_pages"
     static let page = "page"
     
+}
+
+
+struct CommentConstants {
+    
+    static let id = "id"
+    static let answerId = "answer_id"
+    static let content = "content"
+    static let commenter = "commenter"
     
 }
 
