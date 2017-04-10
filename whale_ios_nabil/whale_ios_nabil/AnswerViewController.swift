@@ -18,7 +18,7 @@ class AnswerViewController: UIViewController, Pageable {
     var answers = [Answer]()
     var isUpdating: Bool = true
     var pager: Pager = Pager()
-    
+    var selectedAnswer: Answer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class AnswerViewController: UIViewController, Pageable {
                 self?.answers += pageData.data
                 self?.pager = Pager(page: pageData.page, totalPages: pageData.totalPages)
                 
-                self?.isUpdating = false
+                self?.pager.isUpdating = false
                 self?.collectionView.reloadData()
                 
                 
@@ -60,7 +60,21 @@ class AnswerViewController: UIViewController, Pageable {
         
         self.collectionView.register(UINib(nibName: String(describing: AnswerCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: AnswerCell.self))
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == String(describing: VideoController.self){
+            if let  videoVc = segue.destination as? VideoController{
+                
+                // answer must be assigned to reach this point
+                videoVc.answer = selectedAnswer!
+                
+            }
+            
+        }
+    }
 }
+
+
 
 
 extension AnswerViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -103,6 +117,12 @@ extension AnswerViewController: UICollectionViewDelegate, UICollectionViewDataSo
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.selectedAnswer = answers[indexPath.row]
+        self.performSegue(withIdentifier: String(describing: VideoController.self), sender: self)
         
         
     }

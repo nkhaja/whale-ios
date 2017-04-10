@@ -33,5 +33,14 @@ extension UIScrollView {
     
 }
 
+extension UIImageView{
+    
+    func makeRound(){
+        
+        self.layer.cornerRadius = self.bounds.width/2
+        
+    }
+}
+
 
 

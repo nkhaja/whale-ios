@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		509AE7C665C3E0695941C410 /* Pods_whale_ios_nabilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */; };
+		BD19D2C61E9AB632008B2AE8 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2C51E9AB632008B2AE8 /* VideoController.swift */; };
+		BD19D2CA1E9ADC34008B2AE8 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19D2C91E9ADC34008B2AE8 /* CommentView.xib */; };
+		BD19D2CE1E9AE070008B2AE8 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2CD1E9AE070008B2AE8 /* CommentView.swift */; };
+		BD19D2D01E9AE4C8008B2AE8 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19D2CF1E9AE4C8008B2AE8 /* CommentCell.xib */; };
+		BD19D2D21E9AE656008B2AE8 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2D11E9AE656008B2AE8 /* CommentCell.swift */; };
+		BD19D2D41E9AE983008B2AE8 /* CommentCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2D31E9AE983008B2AE8 /* CommentCollectionController.swift */; };
 		BD454C9D1E97FD8C008CF14C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD454C9C1E97FD8C008CF14C /* Comment.swift */; };
 		BD5650B41E8B65B400989D35 /* whale_ios_nabilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */; };
 		BD5650BB1E8B8E6600989D35 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
@@ -57,6 +63,12 @@
 		6447ADFCAA38CDC4DA6A06E5 /* Pods-whale_ios_nabil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.debug.xcconfig"; sourceTree = "<group>"; };
 		7732C81C8FFADF510C7CF469 /* Pods-whale_ios_nabil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale_ios_nabil.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale_ios_nabil/Pods-whale_ios_nabil.release.xcconfig"; sourceTree = "<group>"; };
 		886220890DEF88DFC91329A4 /* Pods_whale_ios_nabilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_nabilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD19D2C51E9AB632008B2AE8 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		BD19D2C91E9ADC34008B2AE8 /* CommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		BD19D2CD1E9AE070008B2AE8 /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		BD19D2CF1E9AE4C8008B2AE8 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		BD19D2D11E9AE656008B2AE8 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		BD19D2D31E9AE983008B2AE8 /* CommentCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCollectionController.swift; sourceTree = "<group>"; };
 		BD454C9C1E97FD8C008CF14C /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whale_ios_nabilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_nabilTests.swift; sourceTree = "<group>"; };
@@ -152,18 +164,17 @@
 				BDF101201E8594F000499EF4 /* Keys.swift */,
 				BDDFC1371E8047A000BA43D9 /* LoginController.swift */,
 				BDFB65F01E88A2BC00A676C3 /* Protocols.swift */,
-				BDFB65EE1E88939700A676C3 /* AnswerViewController.swift */,
 				BD5650C01E8C1E0A00989D35 /* SignUpController.swift */,
 				BDF532BD1E8E02F900291D04 /* Pager.swift */,
-				BD5650C51E8D880D00989D35 /* AnswerCell.swift */,
+				BD19D2CD1E9AE070008B2AE8 /* CommentView.swift */,
+				BD19D2C51E9AB632008B2AE8 /* VideoController.swift */,
+				BD19D2D31E9AE983008B2AE8 /* CommentCollectionController.swift */,
 				BDFB65F21E88A33A00A676C3 /* Models */,
 				BDDFC1471E804EB400BA43D9 /* Extensions */,
 				BDDFC1481E804EDA00BA43D9 /* UI */,
 				BDFB65F51E8B61BC00A676C3 /* Tests */,
 				BDDFC14C1E80504F00BA43D9 /* Networking */,
 				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
-				BDCB16C01E92C945006EA7C7 /* VideoView.swift */,
-				BDFB65F31E8980B900A676C3 /* AnswerCell.xib */,
 				BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */,
 				BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */,
 				BDDFC1411E8047A000BA43D9 /* Info.plist */,
@@ -191,6 +202,8 @@
 		BDDFC1491E804EE700BA43D9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BD5650C51E8D880D00989D35 /* AnswerCell.swift */,
+				BD19D2D11E9AE656008B2AE8 /* CommentCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -205,6 +218,11 @@
 		BDDFC14B1E804F0E00BA43D9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BDCB16C01E92C945006EA7C7 /* VideoView.swift */,
+				BDFB65EE1E88939700A676C3 /* AnswerViewController.swift */,
+				BD19D2CF1E9AE4C8008B2AE8 /* CommentCell.xib */,
+				BD19D2C91E9ADC34008B2AE8 /* CommentView.xib */,
+				BDFB65F31E8980B900A676C3 /* AnswerCell.xib */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -347,7 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFB65F41E8980B900A676C3 /* AnswerCell.xib in Resources */,
+				BD19D2CA1E9ADC34008B2AE8 /* CommentView.xib in Resources */,
 				BDDFC1401E8047A000BA43D9 /* LaunchScreen.storyboard in Resources */,
+				BD19D2D01E9AE4C8008B2AE8 /* CommentCell.xib in Resources */,
 				BDDFC13D1E8047A000BA43D9 /* Assets.xcassets in Resources */,
 				BDDFC13B1E8047A000BA43D9 /* Main.storyboard in Resources */,
 			);
@@ -469,7 +489,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD19D2D41E9AE983008B2AE8 /* CommentCollectionController.swift in Sources */,
 				BD5650C11E8C1E0A00989D35 /* SignUpController.swift in Sources */,
+				BD19D2CE1E9AE070008B2AE8 /* CommentView.swift in Sources */,
+				BD19D2C61E9AB632008B2AE8 /* VideoController.swift in Sources */,
 				BD588FF41E82EAE800575B32 /* Constants.swift in Sources */,
 				BDDFC14E1E80509C00BA43D9 /* Answer.swift in Sources */,
 				BDFB65EF1E88939700A676C3 /* AnswerViewController.swift in Sources */,
@@ -482,6 +505,7 @@
 				BDFB65F71E8B61E000A676C3 /* NetworkingTest.swift in Sources */,
 				BD8C36541E82E1AF00A8235C /* Networking.swift in Sources */,
 				BD588FF61E82F77D00575B32 /* Service.swift in Sources */,
+				BD19D2D21E9AE656008B2AE8 /* CommentCell.swift in Sources */,
 				BDCB16C11E92C945006EA7C7 /* VideoView.swift in Sources */,
 				BD5650C61E8D880D00989D35 /* AnswerCell.swift in Sources */,
 				BDF101211E8594F000499EF4 /* Keys.swift in Sources */,

@@ -21,6 +21,8 @@ class VideoView: UIView {
     //Assume current time is 0 to begin with
     var currentTime: Float = 0
     
+    var isPlaying = false
+    
     var setAnswer: Bool = false
     
     var answer: Answer? {
@@ -30,6 +32,17 @@ class VideoView: UIView {
                 setAnswer = true
             }
         }
+    }
+    
+    var playButton: UIButton {
+        
+        var frame = CGRect(x: self.frame.midX, y: self.frame.height - 8, width: 50, height: 50)
+        var button = UIButton(frame: frame)
+        
+        button.addTarget(self, action: #selector(playButtonPressed), for: .allEvents)
+        
+        return button
+        
     }
     
     
@@ -54,7 +67,8 @@ class VideoView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
     }
     
     deinit {
@@ -74,14 +88,12 @@ class VideoView: UIView {
             // Time Tracking
             // learn more about this functionality
             
-            player.addPeriodicTimeObserver(forInterval: CMTimeMake(0, 60), queue: DispatchQueue.main, using: { cmTime in
+            player.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(0, 60) , queue: DispatchQueue.main, using: { cmtime in
                 
-                self.currentTime = Float(cmTime.seconds)
-                
+                self.currentTime = Float(cmtime.seconds)
             })
-
-
             
+
             //Looping:
             NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil, using: { (_) in
                 DispatchQueue.main.async {
@@ -90,6 +102,22 @@ class VideoView: UIView {
                 }
             })
         }
+    }
+    
+    
+    func playButtonPressed(){
+        
+        if !isPlaying{
+            isPlaying = true
+            playVideo()
+        }
+        
+        else{
+            isPlaying = false
+            playVideo()
+        }
+        
+        
     }
     
     func playVideo() {

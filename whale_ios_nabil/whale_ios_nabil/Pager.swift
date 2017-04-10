@@ -48,7 +48,7 @@ struct Pager {
     let per_page: Int = 5
     var page: Int = 0
     var totalPages: Int = 0
-    var isupdating = false
+    var isUpdating = false
     
     init(){}
     
@@ -68,16 +68,16 @@ struct Pager {
     
     mutating func updatePageInfo(getDataFunction: () -> Void){
         
-        if !self.isupdating && self.hasMorePages() {
+        if !self.isUpdating && self.hasMorePages() {
             self.page += 1
-            self.isupdating = true
+            self.isUpdating = true
             getDataFunction()
             
         }
             
             // Check to see if total number of pages has changed
-        else if !self.isupdating {
-            self.isupdating = true
+        else if !self.isUpdating {
+            self.isUpdating = true
             getDataFunction()
         }
         
