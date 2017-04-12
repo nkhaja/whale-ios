@@ -23,12 +23,14 @@ struct Answer: Failable {
     var question: Question
     var likeCount: Int = 0
     var commentCount: Int = 0
+    var id: String
     
-    init(videoUrl: URL, thumbnailUrl: URL, question:Question){
+    init(videoUrl: URL, thumbnailUrl: URL, question:Question, id: String){
         
         self.videoUrl = videoUrl
         self.thumbnailUrl = thumbnailUrl
         self.question = question
+        self.id = id
  
     }
     
@@ -39,13 +41,16 @@ struct Answer: Failable {
         
         let videoUrl = json[AnswerConstants.videoUrl].url,
         let thumbnailUrl = json[AnswerConstants.thumbnail_url].url,
-        let question = Question(json: json[AnswerConstants.question])
+        let question = Question(json: json[AnswerConstants.question]),
+        let id = json[AnswerConstants.id].int
+        
         
             else { return nil}
         
         self.videoUrl = videoUrl
         self.thumbnailUrl = thumbnailUrl
         self.question = question
+        self.id = String(describing: id)
         
         if let likes  = json[AnswerConstants.likes_count].int{
             self.likeCount = likes

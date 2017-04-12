@@ -14,6 +14,7 @@ enum APIError: Swift.Error {
     case pagerError
     case unknown
     case noJsonReceived
+    case postFailure(error: Error)
 }
 
 
@@ -93,6 +94,34 @@ struct WhaleService {
         })
     }
     
+    
+    
+    static func getDatum<T:Failable>(request: URLRequestConvertible, completion: @escaping ((Result<T>) -> Void)){
+        
+        Alamofire.request(request).responseJSON(completionHandler: { response in
+        
+        switch(response.result){
+            
+        case let .success(value):
+            
+            let datum: T? = parseOne(json: JSON(value: value))
+                
+            
+        
+            if let datum: T =  parseOne(json: JSON(value: value)) {
+                completion(Result.success(datum))
+            } else{
+                completion(Result.failure(APIError.pagerError))
+            }
+            
+        case let .failure(error):
+            completion(Result.failure(APIError.noJsonReceived))
+            }
+        })
+    }
+        
+    
+    
 
 
     static func parse<U: Failable>(json: JSON) -> PageData<U>? {
@@ -105,6 +134,41 @@ struct WhaleService {
         
         return dataPage
         
+    }
+    
+    
+    static func parseOne<U: Failable>(json: JSON) -> U? {
+        
+        guard let datum = json.array else{
+            return nil
+        }
+        
+        if datum.count > 0{
+            return U.init(json: datum[0])
+        }
+        
+        return nil
+    }
+    
+    
+    
+    // Mark: POSTING
+    
+    
+    static func postComment(answerId: String, body: String, completion: @escaping (APIError?) -> ()){
+        
+        Alamofire.request(WhaleRouter.postComment(toAnswerId: answerId, body: body)).responseJSON(completionHandler: { response in
+            
+            switch(response.result){
+                
+            case let .failure(error):
+                completion(APIError.postFailure(error: error))
+                
+            default:
+                break
+            }
+
+    })
     }
 
     

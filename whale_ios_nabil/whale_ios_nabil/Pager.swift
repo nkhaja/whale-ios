@@ -31,7 +31,7 @@ struct PageData<T:Failable> {
         if let pageData = json[NetworkingConstants.data].array{
             
             self.data = pageData.flatMap(T.init)
-            
+              
         } else { self.data = [] }
         
 

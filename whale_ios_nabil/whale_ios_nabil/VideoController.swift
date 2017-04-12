@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class VideoController: UIViewController {
 
@@ -14,17 +15,83 @@ class VideoController: UIViewController {
 
     @IBOutlet weak var videoView: VideoView!
     
-    var answer: Answer! 
+    var answer: Answer!
+    
+    var comment: Comment!
+    
+    // CommentView
+    
+    @IBOutlet weak var commenterImageView: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    @IBOutlet weak var commentView: UIView!
+
+    @IBOutlet weak var commentViewHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.videoView.answer = answer
 
+        self.getLastComment()
+
         // Do any additional setup after loading the view.
     }
+    
+    
+    func getLastComment(){
+        
+        WhaleService.getDatum(request: WhaleRouter.getAnswerComments(answerId: answer.id, page: 0), completion: { [weak self] (result:Result<Comment>) in
+        
+            switch(result){
+            
+            case let .success(comment):
+                self?.comment = comment
+                self?.setupCommentView()
+                
+                
+            
+            case let .failure(error):
+                
+                let frame = self?.commentView.frame
+                
+                if let frame = frame {
+                 
+                    self?.commentView.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: 0, height: 0)
 
+                }
+                
+                print(error.localizedDescription)
 
+            }
+        })
+
+    }
+    
+    func setupCommentView(){
+        
+        self.nameLabel.text = comment.commenter.userName
+        
+        self.questionLabel.text = comment.content
+        
+        if let url = comment.commenter.imageUrl{
+            
+            self.commenterImageView.kf.setImage(with: url)
+            
+        }
+        
+    }
+    
+    
+    @IBAction func viewCommentsButton(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: String(describing: CommentCollectionController.self), sender: nil)
+        
+    }
+    
     
     @IBAction func exitButton(_ sender: Any) {
         

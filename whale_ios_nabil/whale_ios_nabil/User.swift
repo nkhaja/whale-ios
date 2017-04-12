@@ -43,8 +43,8 @@ class User: Failable {
         let username = json[UserConstants.username].string,
         let firstName = json[UserConstants.firstName].string,
         let lastName = json[UserConstants.lastName].string,
-        let email = json[UserConstants.email].string
-//        let id = json[UserConstants.username].int
+        let email = json[UserConstants.email].string,
+        let id = json[UserConstants.id].int
 
         else {
             return nil
@@ -68,7 +68,7 @@ class User: Failable {
         
         if let urlString = json[UserConstants.imageUrl].string {
         
-                let url = URL(fileURLWithPath: urlString)
+            let url = URL(string: urlString)
                 self.imageUrl = url
         }
     }

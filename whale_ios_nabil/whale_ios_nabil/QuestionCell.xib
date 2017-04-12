@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </view>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FQd-CH-pBD">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtf-Mb-60a">
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-XP-eF8">
+                                <rect key="frame" x="8" y="8" width="59" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uz4-Sx-GEQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="yUe-nu-Lxb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIe-XP-eF8" firstAttribute="leading" secondItem="wtf-Mb-60a" secondAttribute="leading" constant="8" id="8wK-JU-BL2"/>
+                            <constraint firstItem="yIe-XP-eF8" firstAttribute="top" secondItem="wtf-Mb-60a" secondAttribute="top" constant="8" id="jk7-Q4-44f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wtf-Mb-60a" secondAttribute="trailing" id="GZr-5x-YDn"/>
+                <constraint firstItem="wtf-Mb-60a" firstAttribute="top" secondItem="FQd-CH-pBD" secondAttribute="top" id="QBi-Pf-fD2"/>
+                <constraint firstAttribute="bottom" secondItem="wtf-Mb-60a" secondAttribute="bottom" id="Qiq-ya-pXT"/>
+                <constraint firstItem="wtf-Mb-60a" firstAttribute="leading" secondItem="FQd-CH-pBD" secondAttribute="leading" id="TCE-Fc-jnN"/>
+            </constraints>
+            <size key="customSize" width="498" height="131"/>
+            <point key="canvasLocation" x="-88" y="-160.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

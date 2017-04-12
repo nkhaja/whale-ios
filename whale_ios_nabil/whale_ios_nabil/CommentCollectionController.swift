@@ -13,8 +13,13 @@ class CommentCollectionController: UIViewController, Pageable  {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var commentTextField: UITextField!
+    
+    
     var comments = [Comment]()
+    var answerId : String!
     var pager = Pager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +62,38 @@ class CommentCollectionController: UIViewController, Pageable  {
         })
         
     }
+    
+    
+    func postComment(body: String){
+        
+        WhaleService.postComment(answerId: self.answerId, body: body, completion: { result in
+            
+            if let result = result {
+                
+                // do some error pop-up here
+            
+            }
+        })
+    }
+    
+    
+    
+    @IBAction func sendCommentButton(_ sender: Any) {
+        
+        if let text = commentTextField.text{
+            postComment(body: text)
+        }
+        
+    }
+    
+    
+    @IBAction func exitButton(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
 }
 
 

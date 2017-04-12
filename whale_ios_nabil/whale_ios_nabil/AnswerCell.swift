@@ -21,9 +21,15 @@ class AnswerCell: UICollectionViewCell {
     @IBOutlet weak var receiverRole: UILabel!
     
     override func prepareForReuse() {
+        
         self.senderImageView.image = nil
+        self.senderImageView.kf.cancelDownloadTask()
+        
         self.receiverImageView.image = nil
+        self.receiverImageView.kf.cancelDownloadTask()
+        
         self.videoThumbnail.image = nil
+        self.videoThumbnail.kf.cancelDownloadTask()
     }
     
 }

@@ -11,6 +11,7 @@ import Kingfisher
 
 class CommentView: UIView {
 
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var commenterImageView: UIImageView!
 
     @IBOutlet weak var commenterName: UILabel!
@@ -36,4 +37,5 @@ class CommentView: UIView {
         }
     }
     
+
 }

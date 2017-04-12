@@ -22,6 +22,13 @@ protocol Pageable: UIScrollViewDelegate{
     
 }
 
+
+protocol QuestionCellDelegate: class {
+    
+    func answerQuestionButtonPressed(questionBody: String)
+    
+}
+
 extension UIScrollView {
     
     func reachingEnd() -> Bool{

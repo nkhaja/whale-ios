@@ -27,6 +27,8 @@ enum WhaleRouter : URLRequestConvertible {
     
     case getMyQuestions(page: Int)
     case createQuestion(receiver_id: Int, content: String)
+    
+    case postComment(toAnswerId: String, body: String)
 
     
     var path: String {
@@ -50,9 +52,9 @@ enum WhaleRouter : URLRequestConvertible {
             return NetworkingConstants.answers + "/" + answerId + NetworkingConstants.likes
         
        
-        case let .getAnswerComments(answerId, _):
+        case let .getAnswerComments(answerId, _), let .postComment(toAnswerId: answerId, body: _):
             return NetworkingConstants.answers + "/" + answerId + NetworkingConstants.comments
-            
+
     
         case .getMyQuestions, .createQuestion:
             return NetworkingConstants.questions
@@ -79,6 +81,9 @@ enum WhaleRouter : URLRequestConvertible {
                 bodyDict["image_url"] =  url
                 
             }
+        
+        case let .postComment(toAnswerId: _, body: body):
+            bodyDict["comment"] = body
             
         default:
             print("no action")
@@ -121,7 +126,7 @@ enum WhaleRouter : URLRequestConvertible {
             return .get
         
         // TODO: Build out more cases
-        case .createUser, .createAnswer, .createQuestion, .loginUser:
+        case .createUser, .createAnswer, .createQuestion, .postComment, .loginUser:
             return .post
         }
     }
