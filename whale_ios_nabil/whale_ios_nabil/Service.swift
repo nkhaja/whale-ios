@@ -19,6 +19,7 @@ enum APIError: Swift.Error {
 
 
 typealias APIToken = String
+typealias UserCreated = Bool
 
 struct WhaleService {
     
@@ -39,16 +40,58 @@ struct WhaleService {
     
     
     // TODO: Add multipart to  post image for User
-    static func createUser(email: String, first_name: String, last_name: String, password: String, username: String, image_URL: URL?){
+    
+    static func createUser(request: URLRequestConvertible, completion: @escaping (Result<User>) -> Void){
+        Alamofire.request(request).responseJSON(completionHandler: { response in
+            
+            switch(response.result){
+                
+            case let .success(value):
+                print(value)
+                let json = JSON(value:value)
+                
+                if let user = User(json: json){
+                    
+                    completion(Result.success(user))
+                    
+                } else{
+                    // create more helpful error response later
+                    completion(Result.failure(APIError.unknown))
+                    
+                }
+                
+                
+            case let .failure(error):
+                completion(Result.failure(APIError.noJsonReceived))
+                
+                
+            }
+            
+        })
+
+    
+    }
+    
+    static func createUser(email: String, first_name: String, last_name: String, password: String, username: String, image_URL: URL?, completion: @escaping (Result<User>) -> Void){
         
         Alamofire.request(WhaleRouter.createUser(email: email, first_name: first_name, last_name: last_name, password: password, username: username, image_url: nil)).responseJSON(completionHandler: { response in
         
             switch(response.result){
                 
-            case .success:
+            case let .success(value):
+                print(value)
+                let json = JSON(value:value)
                 
-                print("success")
-                // everything is okay, lets keep going.
+                if let user = User(json: json){
+                    
+                    completion(Result.success(user))
+                    
+                } else{
+                    // create more helpful error response later
+                    completion(Result.failure(APIError.unknown))
+                    
+                }
+                
                 
             case let .failure(error):
                 print("failure")
@@ -58,7 +101,6 @@ struct WhaleService {
             }
 
         })
-        
     }
     
     typealias APIResult<T: Failable> = Result<PageData<T>>

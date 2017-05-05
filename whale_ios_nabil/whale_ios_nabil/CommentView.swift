@@ -30,6 +30,8 @@ class CommentView: UIView {
         self.numLikesLabel.text =  String(describing: answer.likeCount)
         self.numCommentsLabel.text = String(describing: answer.commentCount)
         
+        self.commenterImageView.makeRound()
+        
         if let url = comment.commenter.imageUrl{
             
             self.commenterImageView.kf.setImage(with: url)

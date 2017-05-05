@@ -25,18 +25,18 @@ class LoginController: UIViewController {
     
     func loginUser(email:String, password: String){
         
-        WhaleService.loginUser(email: email, password: password) { result  in
+        WhaleService.loginUser(email: email, password: password) { [weak self] result  in
             
             switch result {
             
             case let .success(token):
                 
                 KeyManager.instance.assignToken(token: token)
+                self?.performSegue(withIdentifier: "home", sender: self)
 
             case let .failure(error):
                 
                 print(error.localizedDescription)
-            
             }
             
         }

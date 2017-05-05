@@ -9,8 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-
-struct PageData<T:Failable> {
+struct PageData<T: Failable> {
     
     let per_page: Int = 4
     let page: Int
@@ -43,7 +42,7 @@ struct PageData<T:Failable> {
 
 }
 
-struct Pager {
+public struct Pager {
     
     let per_page: Int = 5
     var page: Int = 0

@@ -17,10 +17,13 @@ class QuestionCell: UICollectionViewCell {
     
     @IBOutlet weak var askerImageView: UIImageView!
     
+    @IBOutlet weak var answerButton: UIButton!
+    
     weak var delegate : QuestionCellDelegate?
     
+    
     @IBAction func answerButton(_ sender: Any) {
-
+        
         if let delegate = self.delegate, let text = questionLabel.text {
             
             delegate.answerQuestionButtonPressed(questionBody: text)
@@ -28,11 +31,16 @@ class QuestionCell: UICollectionViewCell {
         }
     }
     
-    override func prepareForReuse() {
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         
         
+        let attr = layoutAttributes.copy() as! UICollectionViewLayoutAttributes
         
+        let desiredHeight = self.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
         
+        attr.size.height = desiredHeight
+        attr.size.width = UIScreen.main.bounds.width
+        
+        return attr
     }
-    
 }

@@ -16,6 +16,7 @@
 		BD19D2D61E9E93FE008B2AE8 /* QuestionCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2D51E9E93FE008B2AE8 /* QuestionCollectionController.swift */; };
 		BD19D2D81E9E956E008B2AE8 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19D2D71E9E956E008B2AE8 /* QuestionCell.swift */; };
 		BD19D2DA1E9E9978008B2AE8 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19D2D91E9E9978008B2AE8 /* QuestionCell.xib */; };
+		BD4048BB1EAAA77E00EF2356 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4048BA1EAAA77D00EF2356 /* LaunchViewController.swift */; };
 		BD454C9D1E97FD8C008CF14C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD454C9C1E97FD8C008CF14C /* Comment.swift */; };
 		BD5650B41E8B65B400989D35 /* whale_ios_nabilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */; };
 		BD5650BB1E8B8E6600989D35 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD588FF51E82F77D00575B32 /* Service.swift */; };
@@ -73,6 +74,7 @@
 		BD19D2D51E9E93FE008B2AE8 /* QuestionCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCollectionController.swift; sourceTree = "<group>"; };
 		BD19D2D71E9E956E008B2AE8 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		BD19D2D91E9E9978008B2AE8 /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		BD4048BA1EAAA77D00EF2356 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		BD454C9C1E97FD8C008CF14C /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BD5650B11E8B65B400989D35 /* whale_ios_nabilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whale_ios_nabilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5650B31E8B65B400989D35 /* whale_ios_nabilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_nabilTests.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				BDDFC1391E8047A000BA43D9 /* Main.storyboard */,
 				BDDFC13C1E8047A000BA43D9 /* Assets.xcassets */,
 				BDDFC13E1E8047A000BA43D9 /* LaunchScreen.storyboard */,
+				BD4048BA1EAAA77D00EF2356 /* LaunchViewController.swift */,
 				BDDFC1411E8047A000BA43D9 /* Info.plist */,
 			);
 			path = whale_ios_nabil;
@@ -502,6 +505,7 @@
 				BD588FF41E82EAE800575B32 /* Constants.swift in Sources */,
 				BDDFC14E1E80509C00BA43D9 /* Answer.swift in Sources */,
 				BDFB65EF1E88939700A676C3 /* AnswerViewController.swift in Sources */,
+				BD4048BB1EAAA77E00EF2356 /* LaunchViewController.swift in Sources */,
 				BDDFC1381E8047A000BA43D9 /* LoginController.swift in Sources */,
 				BD454C9D1E97FD8C008CF14C /* Comment.swift in Sources */,
 				BDF101231E85D07F00499EF4 /* Question.swift in Sources */,

@@ -63,7 +63,7 @@ enum WhaleRouter : URLRequestConvertible {
         
     }
     
-    var body : [String: Any]{
+    var body : Data {
     
         var bodyDict: [String: Any] = [:]
         
@@ -90,7 +90,9 @@ enum WhaleRouter : URLRequestConvertible {
             
         }
         
-        return bodyDict
+        let data = try! JSONSerialization.data(withJSONObject: bodyDict, options: [])
+        
+        return data
     }
     
     
@@ -108,6 +110,19 @@ enum WhaleRouter : URLRequestConvertible {
         case let .loginUser(email, password):
             paramDict["email"] = email
             paramDict["password"] = password
+        
+        case let .createUser(email: email, first_name: first, last_name: last, password: pass, username: username, image_url: url):
+            paramDict["email"] = email
+            paramDict["first_name"] = first
+            paramDict["last_name"] = last
+            paramDict["password"] =  pass
+            paramDict["username"] = username
+            
+            if let url = url {
+                
+                paramDict["image_url"] =  url
+                
+            }
         
         
         default:
@@ -160,11 +175,11 @@ enum WhaleRouter : URLRequestConvertible {
         
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = headers
+        urlRequest.httpBody = body
         
         print(urlRequest.url?.absoluteString)
         
         return try URLEncoding.methodDependent.encode(urlRequest, with: parameters)
-
     }
 }
 

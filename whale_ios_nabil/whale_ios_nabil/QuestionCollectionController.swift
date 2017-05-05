@@ -18,6 +18,15 @@ class QuestionCollectionController: UIViewController, Pageable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        
+        layout.itemSize.width = view.frame.width
+        collectionView.collectionViewLayout = layout
+        
+        loadNibs()
+        getQuestions()
 
         // Do any additional setup after loading the view.
     }
@@ -75,6 +84,11 @@ extension QuestionCollectionController: UICollectionViewDelegate, UICollectionVi
         
         cell.questionLabel.text = currentQuestion.question
         cell.nameLabel.text = currentQuestion.sender.userName
+        
+        cell.askerImageView.makeRound()
+        
+        cell.answerButton.layer.cornerRadius = 10
+        
 //        cell.timeLabel.text = currentQuestion.
         
         
@@ -86,5 +100,20 @@ extension QuestionCollectionController: UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+}
+
+extension QuestionCollectionController: UIScrollViewDelegate{
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        
+        if scrollView == collectionView && scrollView.reachingEnd(){
+            
+            pager.updatePageInfo(getDataFunction: getQuestions)
+        }
+        
+    }
     
 }
+
+

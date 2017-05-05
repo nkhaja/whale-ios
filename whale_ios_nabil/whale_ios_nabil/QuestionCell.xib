@@ -6,38 +6,84 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </view>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FQd-CH-pBD">
-            <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="QuestionCell" reuseIdentifier="QuestionCell" id="FQd-CH-pBD" userLabel="QuestionCell" customClass="QuestionCell" customModule="whale_ios_nabil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="162"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+                <rect key="frame" x="0.0" y="0.0" width="506" height="162"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtf-Mb-60a">
-                        <rect key="frame" x="0.0" y="0.0" width="498" height="131"/>
+                        <rect key="frame" x="0.0" y="0.0" width="506" height="162"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-XP-eF8">
-                                <rect key="frame" x="8" y="8" width="59" height="63"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-XP-eF8">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Uz4-Sx-GEQ"/>
-                                    <constraint firstAttribute="width" constant="60" id="yUe-nu-Lxb"/>
+                                    <constraint firstAttribute="height" constant="40" id="Uz4-Sx-GEQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="yUe-nu-Lxb"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vZW-gR-d1Q">
+                                <rect key="frame" x="50" y="8" width="41.5" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxY-ku-iwN">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY6-Ik-VRP">
+                                        <rect key="frame" x="0.0" y="26" width="41.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-hr-8Ql">
+                                <rect key="frame" x="50" y="52" width="448" height="58"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3D-iA-Kyg">
+                                <rect key="frame" x="51" y="114" width="404" height="40"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.6470588235294118" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cx4-5K-0Fu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="FQd-CH-pBD" eventType="touchUpInside" id="DcK-nH-nol"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vZW-gR-d1Q" firstAttribute="leading" secondItem="yIe-XP-eF8" secondAttribute="trailing" constant="2" id="6us-Ab-dDC"/>
                             <constraint firstItem="yIe-XP-eF8" firstAttribute="leading" secondItem="wtf-Mb-60a" secondAttribute="leading" constant="8" id="8wK-JU-BL2"/>
+                            <constraint firstItem="vZW-gR-d1Q" firstAttribute="height" secondItem="yIe-XP-eF8" secondAttribute="height" id="D3D-IG-CY0"/>
+                            <constraint firstItem="q3D-iA-Kyg" firstAttribute="centerX" secondItem="wtf-Mb-60a" secondAttribute="centerX" id="LXx-g6-uFe"/>
+                            <constraint firstItem="vZW-gR-d1Q" firstAttribute="top" secondItem="wtf-Mb-60a" secondAttribute="top" constant="8" id="MzF-Qy-uHI"/>
+                            <constraint firstItem="KSa-hr-8Ql" firstAttribute="top" secondItem="vZW-gR-d1Q" secondAttribute="bottom" constant="4" id="PN6-qP-wgw"/>
+                            <constraint firstAttribute="trailing" secondItem="KSa-hr-8Ql" secondAttribute="trailing" constant="8" id="Wpy-kP-zGS"/>
+                            <constraint firstItem="q3D-iA-Kyg" firstAttribute="top" secondItem="KSa-hr-8Ql" secondAttribute="bottom" constant="4" id="dgU-BF-c3e"/>
+                            <constraint firstItem="q3D-iA-Kyg" firstAttribute="width" secondItem="wtf-Mb-60a" secondAttribute="width" multiplier="0.8" id="eIn-95-hry"/>
+                            <constraint firstItem="yIe-XP-eF8" firstAttribute="top" secondItem="wtf-Mb-60a" secondAttribute="top" constant="8" id="hHn-eh-WbD"/>
                             <constraint firstItem="yIe-XP-eF8" firstAttribute="top" secondItem="wtf-Mb-60a" secondAttribute="top" constant="8" id="jk7-Q4-44f"/>
+                            <constraint firstAttribute="height" constant="162" id="rpg-Rp-tOx"/>
+                            <constraint firstItem="KSa-hr-8Ql" firstAttribute="leading" secondItem="vZW-gR-d1Q" secondAttribute="leading" id="rtm-KR-scp"/>
+                            <constraint firstAttribute="bottom" secondItem="q3D-iA-Kyg" secondAttribute="bottom" constant="8" id="yaJ-Cd-uBJ"/>
+                            <constraint firstAttribute="width" constant="506" id="zmp-iP-ahj"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,8 +94,15 @@
                 <constraint firstAttribute="bottom" secondItem="wtf-Mb-60a" secondAttribute="bottom" id="Qiq-ya-pXT"/>
                 <constraint firstItem="wtf-Mb-60a" firstAttribute="leading" secondItem="FQd-CH-pBD" secondAttribute="leading" id="TCE-Fc-jnN"/>
             </constraints>
-            <size key="customSize" width="498" height="131"/>
-            <point key="canvasLocation" x="-88" y="-160.5"/>
+            <size key="customSize" width="506" height="162"/>
+            <connections>
+                <outlet property="answerButton" destination="q3D-iA-Kyg" id="wBz-iW-STI"/>
+                <outlet property="askerImageView" destination="yIe-XP-eF8" id="HBE-bb-aHv"/>
+                <outlet property="nameLabel" destination="NxY-ku-iwN" id="q9E-aS-GCc"/>
+                <outlet property="questionLabel" destination="KSa-hr-8Ql" id="7MF-Nw-10V"/>
+                <outlet property="timeLabel" destination="tY6-Ik-VRP" id="vLJ-ts-C6q"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="-145"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -32,4 +32,20 @@ class AnswerCell: UICollectionViewCell {
         self.videoThumbnail.kf.cancelDownloadTask()
     }
     
+    
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        
+        super.preferredLayoutAttributesFitting(layoutAttributes)
+        
+        
+        let attr = layoutAttributes.copy() as! UICollectionViewLayoutAttributes
+        
+        let desiredHeight = self.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        
+        attr.size.height = desiredHeight
+        attr.size.width = UIScreen.main.bounds.width
+        
+        return attr
+    }
+    
 }

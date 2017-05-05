@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import UIKit
 
-protocol Failable {
+public protocol Failable {
     
     init?(json: JSON)
     

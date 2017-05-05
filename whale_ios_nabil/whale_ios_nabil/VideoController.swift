@@ -28,8 +28,10 @@ class VideoController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var commentView: UIView!
+    
+    @IBOutlet weak var videoViewBottom: NSLayoutConstraint!
+    
 
-    @IBOutlet weak var commentViewHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,15 +57,9 @@ class VideoController: UIViewController {
                 
             
             case let .failure(error):
-                
-                let frame = self?.commentView.frame
-                
-                if let frame = frame {
-                 
-                    self?.commentView.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: 0, height: 0)
+        
+                self?.commenterImageView.image = nil
 
-                }
-                
                 print(error.localizedDescription)
 
             }

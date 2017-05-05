@@ -23,6 +23,13 @@ class AnswerViewController: UIViewController, Pageable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        
+        layout.itemSize = CGSize(width: view.frame.width, height: 250)
+        collectionView.collectionViewLayout = layout
+
+        
         loadNibs()
         getAnswers()
 
@@ -51,7 +58,6 @@ class AnswerViewController: UIViewController, Pageable {
                 print(error.localizedDescription)
                 
             }
-        
         })
     }
     
@@ -69,7 +75,6 @@ class AnswerViewController: UIViewController, Pageable {
                 videoVc.answer = selectedAnswer!
                 
             }
-            
         }
     }
 }
@@ -100,6 +105,9 @@ extension AnswerViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         cell.questionLabel.text = currentQuestion.question
         cell.senderNameLabel.text = sender.userName
+        
+        cell.senderImageView.makeRound()
+        cell.receiverImageView.makeRound()
         
         if let url =  sender.imageUrl{
             cell.senderImageView.kf.setImage(with: url)
