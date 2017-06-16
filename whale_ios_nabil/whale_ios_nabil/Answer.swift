@@ -42,7 +42,7 @@ struct Answer: Failable {
         let videoUrl = json[AnswerConstants.videoUrl].url,
         let thumbnailUrl = json[AnswerConstants.thumbnail_url].url,
         let question = Question(json: json[AnswerConstants.question]),
-        let id = json[AnswerConstants.id].int
+        let id = json[AnswerConstants.id]
         
         
             else { return nil}

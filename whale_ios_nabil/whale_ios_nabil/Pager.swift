@@ -39,7 +39,6 @@ struct PageData<T: Failable> {
         self.totalPages = total_pages
         
     }
-
 }
 
 public struct Pager {

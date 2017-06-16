@@ -100,6 +100,15 @@ extension QuestionCollectionController: UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // Do a segue here
+        
+        
+        
+        
+    }
+    
 }
 
 extension QuestionCollectionController: UIScrollViewDelegate{

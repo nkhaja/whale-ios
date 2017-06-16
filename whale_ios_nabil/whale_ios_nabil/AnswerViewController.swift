@@ -24,7 +24,7 @@ class AnswerViewController: UIViewController, Pageable {
         super.viewDidLoad()
         
         let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        layout.estimatedItemSize = CGSize(width: view.frame.width, height: 250)
         
         layout.itemSize = CGSize(width: view.frame.width, height: 250)
         collectionView.collectionViewLayout = layout

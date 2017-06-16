@@ -113,6 +113,7 @@ struct WhaleService {
             // TODO: Trim this code
             switch(response.result){
                 
+                // TODO:
             case let .success(value):
                 
                 let pageData: PageData<T>? = parse(json: JSON(value:value))
@@ -169,12 +170,15 @@ struct WhaleService {
     static func parse<U: Failable>(json: JSON) -> PageData<U>? {
         
  
-        
-        guard let dataPage: PageData<U> = PageData(json: json) else{
-            return nil
-        }
-        
-        return dataPage
+        // TODO: Redundancy, nil returns either way
+       
+        return PageData(json: json)
+//        
+//        guard let dataPage: PageData<U> = PageData(json: json) else{
+//            return nil
+//        }
+//        
+//        return dataPage
         
     }
     

@@ -175,9 +175,6 @@ enum WhaleRouter : URLRequestConvertible {
         
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = headers
-        urlRequest.httpBody = body
-        
-        print(urlRequest.url?.absoluteString)
         
         return try URLEncoding.methodDependent.encode(urlRequest, with: parameters)
     }
